@@ -352,6 +352,7 @@ body {
      grid-row: 5 / 6;
      grid-column-gap: 30px;
      
+     
 }
 .beer2 .pric2 {
     display: grid;
@@ -359,6 +360,7 @@ body {
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     grid-column-gap: 30px;
+    
 }
 .pric1 .cena {
     grid-column: 3 / 4;
@@ -373,6 +375,7 @@ body {
 .btn {
     display: inline-block;
     width: 140px;
+    height: 25px;
     font: inherit;
     text-align: center;
     color: #834700;
@@ -396,6 +399,7 @@ body {
 .btn-buy {
     display: inline-block;
     width: 105px;
+    height: 25px;
     padding: 10px 0;
     font: inherit;
     text-align: center;
