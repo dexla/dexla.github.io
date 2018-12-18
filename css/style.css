@@ -84,9 +84,9 @@ body {
 }
 .features .container {
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: auto auto auto;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .features-item {
     border-right: 1px solid rgba(131, 72, 0, 0.205);
