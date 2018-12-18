@@ -675,6 +675,7 @@ sup {
     grid-template-rows: 30px;
     align-items: center;
     justify-items: end;
+    /* margin-left: 10px; */
 }
 .footer-bottom p {
     font-family: Georgia, Times, serif;
