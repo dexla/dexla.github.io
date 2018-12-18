@@ -363,10 +363,12 @@ body {
 .pric1 .cena {
     grid-column: 3 / 4;
     padding: 12px;
+    align-self: start;
 }
 .pric2 .cena {
     grid-column: 3 / 4;
     padding: 12px;
+    align-self: start;
 }
 .btn {
     display: inline-block;
@@ -381,6 +383,7 @@ body {
     border: 2px solid #834700;
     border-radius: 3px;
     padding: 10px 0;
+    align-self: start;
 }
 .btn:hover {
     color: #834700;
@@ -404,6 +407,7 @@ body {
     word-wrap: break-word;
     border: 2px solid #834700;
     border-radius: 3px;
+    align-self: start;
 }
 .btn-buy:hover {
     color: #ffffff;
@@ -418,7 +422,6 @@ body {
     display: inline-block;
     width: 150px;
     font: inherit;
-    vertical-align: middle;
     text-align: center;
     color: #a7a098;
     font-weight: bold;
