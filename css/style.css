@@ -646,7 +646,6 @@ sup {
     grid-template-rows: 30px;
     align-items: center;
     justify-items: center;
-    /* margin-left: 10px; */
 }
 .footer-bottom p {
     font-family: Georgia, Times, serif;
@@ -688,6 +687,7 @@ sup {
 .footer-social {
      font-size: 0; 
      justify-self: center;
+     margin-left: 75px;
 }
 .social-btn {
     display: inline-block;
