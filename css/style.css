@@ -1,5 +1,5 @@
 body {
-    min-width: 1040px;
+    min-width: 1220px;
     margin: 0 auto;
     padding: 0;
     font-size: 18px;
@@ -19,7 +19,7 @@ body {
     background-size: cover;
 }
 .container {
-    width: 1020px;
+    width: 1200px;
     margin: 0 auto;
     } 
 .gri {
