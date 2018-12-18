@@ -135,8 +135,8 @@ body {
 }
 .history {
     display: grid;
-    grid-template-columns: 490px 230px;
-    grid-template-rows: 20px 130px 20px 130px;
+    grid-template-columns: 490px 250px;
+    grid-template-rows: 50px auto 50px auto;
     justify-content: space-between;
     grid-gap: 20px;
 }
@@ -148,13 +148,17 @@ body {
     font-size: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: center;
+    /* align-self: center; */
+    border: 1px solid #666666;
+    margin: 0;
 }
 .reference-title2 {
     font-size: 20px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    align-self: center;
+    /* align-self: center; */
+    border: 1px solid #666666;
+    margin: 0;
 }
 .reference-source1 {
     color: #666666;
@@ -162,8 +166,9 @@ body {
     font-style: italic;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    justify-self: end;
-    align-self: center;
+    /* justify-self: end; */
+    /* align-self: center; */
+    border: 1px solid #666666;
 }
 .reference-source2 {
     color: #666666;
@@ -171,34 +176,39 @@ body {
     font-style: italic;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    justify-self: end;
-    align-self: center;
+    /* justify-self: end; */
+    /* align-self: center; */
+    border: 1px solid #666666;
 }
 .history .p1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-   word-wrap: break-word;
-    line-height: 29px;
-    align-self: center;
+    word-wrap: break-word;
+    /* align-self: start; */
+    border: 1px solid #666666;
+    margin: 0;
 }
 .history .p2 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     word-wrap: break-word;
-    line-height: 29px;
-    align-self: center;
+    /* align-self: start; */
+    border: 1px solid #666666;
+    margin: 0;
 }
 .history .ima {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    justify-self: end;
-    align-self: center;
+    /* justify-self: end; */
+    /* align-self: start; */
+    border: 1px solid #666666;
 }
 .history .ima2 {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    justify-self: end;
-    align-self: center;
+    /* justify-self: end; */
+    /* align-self: start; */
+    border: 1px solid #666666;
 }
 .beer-history p {
     font-size: 16px;
