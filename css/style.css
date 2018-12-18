@@ -642,16 +642,16 @@ sup {
 }
 .footer-bottom {
     display: grid;
-    grid-template-columns: 31% 30% 39%;
+    grid-template-columns: 31% 28% 39%;
     grid-template-rows: 30px;
     align-items: center;
     justify-items: center;
 }
 .footer-bottom p {
-    font-family: Georgia, Times, serif;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     color: #8d8d8d;
-    justify-self: center;
+    margin-left: 67px;
 }
 .footer-top .footer-logo {
     justify-self: center;
