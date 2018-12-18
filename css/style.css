@@ -674,7 +674,7 @@ sup {
     grid-template-columns: 31% 30% 39%;
     grid-template-rows: 30px;
     align-items: center;
-    justify-items: end;
+    justify-items: center;
     /* margin-left: 10px; */
 }
 .footer-bottom p {
