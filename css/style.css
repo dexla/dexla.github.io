@@ -165,7 +165,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     justify-self: end;
-    align-self: center;
+    align-self: center; 
 }
 .reference-source2 {
     color: #666666;
@@ -375,7 +375,7 @@ body {
 .btn {
     display: inline-block;
     width: 140px;
-    height: 25px;
+    /* height: 25px; */
     font: inherit;
     text-align: center;
     color: #834700;
@@ -399,7 +399,7 @@ body {
 .btn-buy {
     display: inline-block;
     width: 105px;
-    height: 25px;
+    /* height: 25px; */
     padding: 10px 0;
     font: inherit;
     text-align: center;
@@ -501,6 +501,7 @@ sup {
 }
 .feedback-form{
     min-height: 550px;
+    outline: none;
     }
 .feedback-tip {
     font-size: 16px;
@@ -606,7 +607,8 @@ sup {
     height: 35px; 
     vertical-align: middle;
 }
-.feedback-form .btn {
+.btn-form {
+    display: inline-block;
     width: 200px;
     padding: 10px;
     font: inherit;
@@ -621,11 +623,11 @@ sup {
     border-radius: 3px;
     margin-top: 60px;
 }
-.feedback-form .btnhover {
+.btn-form:hover {
     color: #ffffff;
     border-color: #834700;
 }
-.feedback-form .btn:active {
+.btn-form:active {
     color: rgba(235, 182, 126, 0.3);
     border-color: #834700;
 }
