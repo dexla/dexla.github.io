@@ -246,6 +246,7 @@ body {
 }
 .beer-and-price {
     width: 800px;
+    min-height: 785px;
     margin: 0 auto;
     background: #ffffff;
     font-size: 14px;
