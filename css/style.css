@@ -626,6 +626,7 @@ sup {
 .btn-form:hover {
     color: #ffffff;
     border-color: #834700;
+    cursor: pointer;
 }
 .btn-form:active {
     color: rgba(235, 182, 126, 0.3);
