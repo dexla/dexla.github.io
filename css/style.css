@@ -671,10 +671,10 @@ sup {
 }
 .footer-bottom {
     display: grid;
-    grid-template-columns: 31% 40% 39%;
+    grid-template-columns: 31% 30% 39%;
     grid-template-rows: 30px;
     align-items: center;
-    margin-left: 10px;
+    justify-items: end;
 }
 .footer-bottom p {
     font-family: Georgia, Times, serif;
