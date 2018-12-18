@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+DOCTYPE HTML>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Кваст</title>
-    <link rel="stylesheet" href="css/style11.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
      <div class="page-header">
@@ -18,16 +18,17 @@
          </div>  
        </div> 
        <div class="promo">
-          <p>Крафтовый квас <br>
+          <p>Крафтовый квас<br>
             всему голова!</p>
          </div>
       </div>
      </div>
      <div class="fotos-price">
       <div class="container">
-        <h2 class="section-title">Новинки</h2>
-          <div class="beer-and-price">
-            <h3 class="vaht">Вахтёр</h3>
+        <div class="beer-and-price">
+        <h2 class="section-title news">Новинки</h2>
+        <div class="beer1">  
+        <h3 class="vaht">Вахтёр</h3>
             <table class="taba">
               <tr>
             <td>Алк.</td> <td>&lt; 1%</td> 
@@ -37,13 +38,15 @@
                </table>
             <p class="sostav">Ржаной хлеб, Вода, <br> Солод, Соль</p>
             <img src="img/bottle-left.jpg" alt="Вахтер" class="im1">
-            <p class="reklama">Терпкий и мощный, вкус этого кваса <br> 
-              взбодрит после тяжёлого дня и придаст <br>
+            <p class="reklama">Терпкий и мощный, вкус этого кваса 
+              взбодрит после тяжёлого дня и придаст
                сил для вечерних приключений!</p>
             <div class="pric pric1">
             <a class="btn" href="#">Подробнее</a>
             <a class="btn-buy" href="#">Купить</a>
             <b class="cena">150 Р.</b></div>
+          </div>
+            <div class="beer2"> 
             <h3 class="roma">Романтик</h3>
            <table class="taba2">
             <tr>
@@ -57,13 +60,14 @@
           </table>
           <p class="sostav2">Ячменный хлеб, Вода,<br> Солод, Апельсин</p>
           <img src="img/bottle-right.jpg" alt="Романтик" class="im2">
-          <p class="reklama2">Лёгкий и освежающий напиток поможет <br> 
-            сохранять отличное настроение в <br> течение всего дня.</p>
+          <p class="reklama2">Лёгкий и освежающий напиток поможет 
+            сохранять отличное настроение в течение всего дня.</p>
           <div class="pric pric2">
           <a class="btn" href="#">Подробнее</a>
           <a class="btn-buy" href="#">Купить</a>
           <b class="cena">90 Р.</b>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -88,6 +92,7 @@
     </div>
     <div class="beer-history">
       <div class="container">
+        <div class="histor">
         <h2 class="section-title">Немного истории</h2>
         <div class="history">
         <h3 class="reference-title1">Происхождение кваса</h3>
@@ -113,9 +118,11 @@
             </p>
         </div>
       </div>
+      </div>
     </div>
     <div class="reviews">
       <div class="container">
+        <div class="rews">
      <h2 class="section-title">Пресса о нас</h2>
      <div class="review-item">
         <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового 
@@ -125,9 +132,11 @@
          <a href="#" class="btn-read">Читать далее</a>
      </div>
     </div>
+    </div>
   </div>
     <div class="assortiment">
       <div class="container">
+        <div class="tabla">
         <h2 class="section-title">Ассортимент</h2>
         <table class="price-list">
         <tr>
@@ -168,31 +177,33 @@
       </table>
       </div>
     </div>
+    </div>
     <div class="feedback">
       <div class="container">
+        <div class="forman">
         <h2 class="section-title">Заказать</h2>
         <p class="feedback-tip">Не ждите пока нас отрекламируют, как Вятский
            квас, и мы поднимем цены! Закажите <br> настоящий крафтовый квас сейчас.
             При заказе от 10 баррелей — скидка 10%.</p>
         <form class="feedback-form" action="#" method="POST">
           <div class="feedback-form-group">
-             <label for="fullname">Представьтесь:</label>
-             <input  class="column" type="text" name="fullname" id="fullname">
+             <label for="fullname" >Представьтесь:</label>
+             <input  class="column" type="text" name="fullname" id="fullname" placeholder="Как мы можем к Вам обращаться?" required>
           </div>
           <div class="feedback-form-group column-min">
              <label for="phone">Номер телефона:</label>
-             <input type="text" name="phone" id="phone">
+             <input type="text" name="phone" id="phone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ" required>
           </div>
           <div class="feedback-form-group column-min1">
               <label for="phone2">Доп. номер:</label>
-              <input type="text" name="phone2" id="phone2">
+              <input type="text" name="phone2" id="phone2" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ">
            </div>
-           <div class="feedback-form-group">
-              <label for="email">Email:</label>
-              <input  class="column" type="text" name="email" id="email">
+          <div class="feedback-form-group">
+              <label  class="email" for="email" required>Email:</label>
+              <input  class="column" type="text" name="email" id="email" placeholder="Ваша электронная почта">
            </div>
            <div class="feedback-form-group  column1">
-             <label for="topic">Объем заказа:</label>
+             <label for="topic"  class="laba">Объем заказа:</label>
              <select name="topic" id="topic">
                <option value="5-10">От 5 до 10 баррелей в неделю</option>
                <option value="2">От 15 до 20 баррелей в неделю</option>
@@ -201,15 +212,16 @@
            </div>
            <div class="feedback-form-group">
              <label for="comment">Доп. комментарий:</label>
-             <textarea  class="column" name="comment" id="comment" rows="10" cols="96"></textarea>
+             <textarea  class="column" name="comment" id="comment" rows="14" cols="96" placeholder="СООБЩИТЕ НАМ ВСЁ, ЧТО СЧИТАЕТЕ НУЖНЫМ"></textarea>
            </div>
            <div class="checkbox-area">
              <label>
-               <input type="checkbox" name="subscrition"> Я согласен получать квасную рассылку
+               <input type="checkbox" name="subscrition" checked> Я согласен получать квасную рассылку
              </label>
-           </div>  
-           <input type="submit" class="btn" value="Отправить заказ">
+            </div>
+            <input type="submit" class="btn" value="Отправить заказ">
         </form>
+     </div>
      </div>
     </div>
     <div class="page-footer">
@@ -238,3 +250,4 @@
   </div>
   </body>
 </html>
+
