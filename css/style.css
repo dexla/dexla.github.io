@@ -145,71 +145,61 @@ body {
     margin: 0 auto;
 }
 .reference-title1 {
-    /* font-size: 20px; */
+    font-size: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    /* align-self: center; */
-    border: 1px solid #666666;
+    align-self: center;
     margin: 0;
 }
 .reference-title2 {
-    /* font-size: 20px; */
+    font-size: 20px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    /* align-self: center; */
-    border: 1px solid #666666;
+    align-self: center;
     margin: 0;
 }
 .reference-source1 {
     color: #666666;
-    /* font-size: 16px; */
+    font-size: 16px;
     font-style: italic;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    /* justify-self: end; */
-    /* align-self: center; */
-    border: 1px solid #666666;
+    justify-self: end;
+    align-self: center;
 }
 .reference-source2 {
     color: #666666;
-    /* font-size: 16px; */
+    font-size: 16px;
     font-style: italic;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    /* justify-self: end; */
-    /* align-self: center; */
-    border: 1px solid #666666;
+    justify-self: end;
+    align-self: center;
 }
 .history .p1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     word-wrap: break-word;
-    /* align-self: start; */
-    border: 1px solid #666666;
+    align-self: start;
     margin: 0;
 }
 .history .p2 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     word-wrap: break-word;
-    /* align-self: start; */
-    border: 1px solid #666666;
+    align-self: start;
     margin: 0;
 }
 .history .ima {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    /* justify-self: end; */
-    /* align-self: start; */
-    border: 1px solid #666666;
+    justify-self: end;
 }
 .history .ima2 {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    /* justify-self: end; */
-    /* align-self: start; */
-    border: 1px solid #666666;
-}
+    justify-self: end;
+ }
 .beer-history p {
     font-size: 16px;
 }
