@@ -510,7 +510,7 @@ sup {
     color: #585858;
 }
 .feedback-form-group {
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 }
 .feedback .section-title{
     margin-bottom: 90px;
@@ -555,25 +555,31 @@ sup {
     margin-top: 35px;
     margin-bottom: 5px;
 }   
+.column-min label {
+    padding-bottom: -13px;
+}
 .column1 select {
     width: 604px; 
     float: right;
     text-transform: uppercase;
     font-weight: bold;
     color: #926631;
-    height: 58px;
-    padding: 0;
+    height: 56px;
+    padding-top: 1px;
+    padding-bottom: -1px;
     margin: 0;
     padding-left: 13px;
+    border: none;
 }
 .column-min {
     float: left;
 }
 .column-min input {
     width: 185px; 
-    padding: 0;
     margin-left: 21px;
     padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 .column-min1 {
     float: right; 
@@ -581,8 +587,9 @@ sup {
 .column-min1 input {
     width: 185px; 
     margin-left: -40px;
-    padding: 0px;
-    padding-left: 15px;
+   padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 .checkbox-area {
     position:relative;
@@ -594,9 +601,13 @@ sup {
     font-size: 18px;
     font-weight: bold;
 }
+.laba {
+    margin-top: 6px;
+}
 #comment {
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 14px;
+    margin-top: -6px;
     max-width: 583px;
     min-width: 583px;
     min-height: 150px;
@@ -622,6 +633,7 @@ sup {
     border: 2px solid #834700;
     border-radius: 3px;
     margin-top: 60px;
+    
 }
 .btn-form:hover {
     color: #ffffff;
