@@ -1,2 +1,0 @@
-# dexla.github.io
-mynewproject
