@@ -1,21 +1,145 @@
 body {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
-    font-weight: bold;
-    font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-footer,
-header,
-.features {
     color: #ffffff;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background: #000000 url("../img/phone-index.jpg") top center no-repeat;
 }
-h3 {
-    font-size: 30px;
-    line-height: 42px;
+a {
+    text-decoration: none;
+}
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+}
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #663d15;
 }
 .main-navigation {
     font-size: 16px;
     line-height: 20px;
+    color: #ffffff;
+    background-color: #000000;
+}
+.site-navigation, 
+.user-navigation {
+    list-style: none;
+}
+.site-navigation a, 
+.user-navigation a {
+    color: #ffffff;
+}
+.site-navigation a:hover, 
+.user-navigation a:hover,
+.site-navigation a:focus, 
+.user-navigation a:focus {
+    background-color: #242424;
+}
+.features-list {
+    list-style: none;
+}
+.feature-item {
+    text-align: center;
+}
+.feature-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.index-columns {
+    background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
+    color: #000000;
+}
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.news-list {
+    list-style: none;
+}
+.new-item time {
+    text-transform: none;
+}
+.gallery-content {
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+  }
+.gallery-content a img {
+    vertical-align: middle;
+}
+.appointment-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+.appointment-item input:focus {
+    border-color: #663d15;
+    outline: none;
+}
+.main-footer {
+    color: #ffffff;
+    background: #232323 url("../img/phone-footer.jpg") 0 0 repeat;
+}
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer-contact a:hover,
+.footer-contact a:focus {
+    text-decoration: none;
+}
+.footer-social {
+    text-align: center;
+}
+.footer-social ul {
+    list-style: none;
+}
+.social-button {
+    color: #ffffff;
+}
+.footer-copyright {
+    text-align: center;
+}
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+.modal {
+    color: #000000;
+    background: #f8f5f2 url("../img/phone-login") 0 0 repeat;
+}
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}
+.restore:hover,
+.restore:focus {
+    text-decoration: none;
 }

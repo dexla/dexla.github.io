@@ -47,6 +47,7 @@
                 </li>
                </ul>
            </section>
+           <div class="index-columns">
            <section class="news">
                <h2>Новости</h2>
                <ul class="news-list">
@@ -59,17 +60,19 @@
                      <time datetime="2019-01-18">18 января</time>
                    </li>
                </ul>
-               <a class="button-news" href="">Все Новости</a>  
+               <a class="button button-news" href="">Все Новости</a>  
            </section>
-           <section class="photo-galery">
+           <section class="gallery">
                <h2>Фотогалерея</h2>
-               <figure class="galery-content">
+               <figure class="gallery-content">
                  <a href="#"><img src="img/kresla.jpg" width="286" height="164" alt="интерьер"></a>
                </figure>
-               <button type="button" class="btn-left-back">Назад</button>
-               <button type="button" class="btn-right-forward">Вперед</button>
+               <button type="button" class="button btn-left-back">Назад</button>
+               <button type="button" class="button btn-right-forward">Вперед</button>
            </section>
-           <section class="kontakt-info">
+        </div>
+        <div class="index-columns">
+           <section class="contact-info">
                <h2>Контактная информация</h2>
                <p>
                   БАРБЕРШОП «БОРОДИНСКИЙ»<br>
@@ -104,9 +107,10 @@
                      <label for="tel">Телефон</label>
                      <input type="tel" name="tel" id="tel" placeholder="+34 123-456-789">
                    </p>
-                   <button class="buttom" type="submit">Отправить</button>
+                   <button class="button" type="submit">Отправить</button>
                </form>
            </section>
+        </div>
     </main>
     <footer class="main-footer">
         <p class="footer-contact">
@@ -116,7 +120,7 @@
            ТЕЛЕФОН: +7 (495) 666-02-66
         </p>
         <div class="footer-social">
-            <b>Давайте дружить</b>
+            <b>Давайте дружить!</b>
             <ul>
                 <li><a class="social-button" href="https://vk.com">Вконтакте</a></li>
                 <li><a class="social-button" href="https://fb.com">Фейсбук</a></li>
@@ -128,21 +132,21 @@
             <a class="button" href="#">HTML Academy</a>
         </p>
     </footer>
-    <section class="madal madal-login">
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Ведите пожалуйста свой логин и пароль</p>
         <form class="login-form" method="POST" action="#">
             <p>
-              <label for="login">Логин</label>
-              <input type="text" name="login" id="login" placeholder="Логин">
+              <label class="visually-hidden" for="login">Логин</label>
+              <input class="login-icon-user" type="text" name="login" id="login" placeholder="Логин">
             </p>
             <p>
-              <label for="password">Пароль</label>
-              <input type="password" name="password" id="password" placeholder="Пароль">
+              <label class="visually-hidden" for="password">Пароль</label>
+              <input class="login-icon-password" type="password" name="password" id="password" placeholder="Пароль">
             </p>
             <p class="login-passwors-info">
-            <label>
-              <input class="visually-hidden" type="checkbox" name="remember" checked>ЗАПОМНИТЕ МЕНЯ
+            <label class="login-checkbox">
+              <input  class="visually-hidden" type="checkbox" name="remember" checked>ЗАПОМНИТЕ МЕНЯ
             </label>
             <a class="restore" href="#">Я забыл пароль!</a>
             </p>
@@ -150,7 +154,7 @@
         </form>
         <button type="button" class="modal-close">Закрыть</button>
     </section>
-    <section class="madal madal-map">
+    <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться?</h2>
         <p><img src="img/map.png" width="766" height="560" alt="адрес на карте" ></p>
         <button type="button" class="modal-close">Закрыть</button>
