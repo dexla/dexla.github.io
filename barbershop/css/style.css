@@ -13,7 +13,6 @@ body {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px solid #aba9a7;
 }
 a {
     text-decoration: none;
@@ -156,7 +155,6 @@ a {
 }
 .main-footer .container {
     display: flex;
-    /* justify-content: space-between; */
 }
 .footer-contact {
     width: 320px;
