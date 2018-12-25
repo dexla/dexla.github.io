@@ -46,6 +46,7 @@ a {
 .user-navigation a:focus {
     background-color: #242424;
 }
+
 .features-list {
     list-style: none;
 }
@@ -115,6 +116,92 @@ a {
     color: #000000;
     background-color: #ffffff;
 }
+.inner-page {
+    background: #f8f5f2 url("../img/phone-catalog.jpg") top center repeat;
+    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+}
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+.breadcrumbs-current { 
+    color: #aba9a7;
+}
+.breadcrumbs {
+    list-style: none;
+    line-height: 20px;
+}
+.breadcrumbs a {
+    color: #000000;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+.filter legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+.filter fieldset {
+    border: none;
+}
+.form-list {
+    list-style: none;
+}
+.form-input:hover + label,
+.form-input:focus + label {
+    color: #663d15;
+}
+.form-input:disabled + label {
+    color: #000000;
+    opacity: 0.5;
+}
+.catalog-list {
+    list-style: none;
+}
+.catalog-item {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog-item span {
+    color: #000000;
+}
+.catalog-category {
+    text-transform: none;
+}
+.catalog-item-price b {
+    background-color: #e5e5e5;
+    text-align: center;
+}
+.pagination-list {
+    list-style: none;
+}
+.pagination-item {
+    color: #ffffff;
+    background-color: #000000;
+}
+.pagination-item-current {
+    color: #000000;
+    background-color: #ffffff;
+}
+.pagination-item:hover,
+.pagination-item:focus,
+.pagination-item:active {
+    color: #ffffff;
+    background-color: #663d15;
+}
+.pagination-item-current:hover,
+.pagination-item-current:focus,
+.pagination-item-current:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+/* попап */
 .modal {
     color: #000000;
     background: #f8f5f2 url("../img/phone-login") 0 0 repeat;
