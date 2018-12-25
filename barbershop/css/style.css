@@ -49,16 +49,11 @@ a {
 }
 .site-navigation {
     width: 620px;
-    /* min-height: 72px; */
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
 }
 .user-navigation {
     width: 140px;
-    /* min-height: 72px; */
-    /* display: flex;
-    align-items: center; */
 }
 .main-navigation-wrapper {
     background-color: #000000;
@@ -159,6 +154,7 @@ a {
 .footer-contact {
     width: 320px;
     margin: 0;
+    margin-right: 80px;
 }
 .footer-contact a {
     color: #ffffff;
@@ -171,6 +167,7 @@ a {
 .footer-social {
     width: 145px;
     text-align: center;
+    margin-right: auto;
 }
 .footer-social ul {
     list-style: none;
