@@ -13,6 +13,7 @@ body {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    border: 1px solid #aba9a7;
 }
 a {
     text-decoration: none;
@@ -85,11 +86,19 @@ a {
     display: flex;
     justify-content: space-between;
 }
+.features {
+    margin-bottom: 80px;
+}
 .features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .feature-item {
     text-align: center;
+    width: 300px;
 }
 .feature-item h3 {
     font-size: 30px;
@@ -98,10 +107,18 @@ a {
 .index-columns {
     background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
     color: #000000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    /* border: 1px solid #ffffff; */
 }
 .index-columns h2 {
     font-size: 30px;
     line-height: 42px;
+}
+.news {
+    width: 380px;
 }
 .news-list {
     list-style: none;
@@ -109,12 +126,18 @@ a {
 .new-item time {
     text-transform: none;
 }
-.gallery-content {
+.gallery {
+    width: 300px;
+}
+.gallery-content img {
     background-color: #cccccc;
     border: 7px solid #ffffff;
   }
-.gallery-content a img {
-    vertical-align: middle;
+.contact-info {
+    width: 380px;
+}
+.appointment {
+    width: 300px;
 }
 .appointment-item input {
     font: inherit;
@@ -128,6 +151,16 @@ a {
 .main-footer {
     color: #ffffff;
     background: #232323 url("../img/phone-footer.jpg") 0 0 repeat;
+    margin-top: 65px;
+    padding: 60px 0;
+}
+.main-footer .container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.footer-contact {
+    width: 320px;
+    margin: 0;
 }
 .footer-contact a {
     color: #ffffff;
@@ -138,6 +171,7 @@ a {
     text-decoration: none;
 }
 .footer-social {
+    width: 145px;
     text-align: center;
 }
 .footer-social ul {
@@ -147,7 +181,9 @@ a {
     color: #ffffff;
 }
 .footer-copyright {
+    width: 150px;
     text-align: center;
+    margin: 0;
 }
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
