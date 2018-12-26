@@ -461,7 +461,8 @@ img {
 }
 .form-input:hover + label,
 .form-input:focus + label {
-    color: #663d15;
+    /* color: #663d15; */
+    color: red;
 }
 .form-input:disabled + label {
     color: #000000;
@@ -485,7 +486,6 @@ img {
     left: -43px;
     border: 2px solid #000000;
     border-radius: 2px;
-    z-index: 1;
 }
 input[type="checkbox"]:checked + label::after {
     background-image: url("../img/cross.svg");
@@ -499,9 +499,8 @@ input[type="checkbox"]:checked + label::after {
     top: 3px;
     left: -39px;
     border:none;
-    z-index: 2;
 }
-input[type="radio"] + label {
+.input[type="radio"] + label {
     position: relative;
     display: block;
 }
@@ -528,7 +527,6 @@ input[type="radio"]:checked + label::after {
     top: 5px;
     left: -37px;
     border-radius: 50%;
-    z-index: 2;
 } 
 .button-show {
     padding: 12px 30px 12px 34px;
