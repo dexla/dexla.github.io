@@ -36,6 +36,7 @@
             <li><a href="catalog.html">Средства для ухода</a></li>
             <li class="breadcrumbs-current">Набор для путиешествий "Baxter of California"</li>
         </ul>
+        <div class="product-info-column">
         <section class="product-photos">
             <h2 class="visually-hidden">Изображение товара</h2>
             <p class="product-photo-full"><img src="img/baxter-big.jpg" width="460" height="498" alt="полный набор"></p>
@@ -62,8 +63,9 @@
                 <li>Крем после бритья, шампунь (50 мл)</li>
                 <li>Удобная кожаная косметичка</li>
             </ul>
-        </section>
-        </main>
+    </section>
+    </div>
+    </main>
  </body>
  <footer class="main-footer">
      <div class="container">
@@ -92,16 +94,16 @@
         <p>Ведите пожалуйста свой логин и пароль</p>
         <form class="login-form" method="POST" action="#">
             <p>
-              <label for="login">Логин</label>
-              <input type="text" name="login" id="login" placeholder="Логин">
+              <label class="visually-hidden" for="login">Логин</label>
+              <input class="login-icon-user" type="text" name="login" id="login" placeholder="Логин">
             </p>
             <p>
-              <label for="password">Пароль</label>
-              <input type="password" name="password" id="password" placeholder="Пароль">
+              <label class="visually-hidden" for="password">Пароль</label>
+              <input class="login-icon-password" type="password" name="password" id="password" placeholder="Пароль">
             </p>
             <p class="login-passwors-info">
-            <label>
-              <input class="visually-hidden" type="checkbox" name="remember" checked>ЗАПОМНИТЕ МЕНЯ
+            <label class="login-checkbox">
+              <input  class="visually-hidden" type="checkbox" name="remember" checked>ЗАПОМНИТЕ МЕНЯ
             </label>
             <a class="restore" href="#">Я забыл пароль!</a>
             </p>
@@ -114,5 +116,4 @@
         <button type="button" class="modal-close">Закрыть</button>
     </section>
 </body>
-</html>
 </html>
