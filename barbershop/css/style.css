@@ -297,13 +297,13 @@ a {
     margin-bottom: 20px;
     margin-right: 20px;
     background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 .catalog-item:nth-child(3n) {
     margin-right: 0;
 }
 .catalog-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
 }
 .catalog-item span {
     color: #000000;
@@ -321,7 +321,6 @@ a {
     padding: 0;
     list-style: none;
     min-height: 47px;
-    border: 1px solid #663d15;
 }
 .pagination-item {
     color: #ffffff;
