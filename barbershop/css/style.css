@@ -257,6 +257,11 @@ img {
 .appointment {
     width: 300px;
 }
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .appointment-item input {
     font: inherit;
     background-color: transparent;
@@ -265,6 +270,15 @@ img {
 .appointment-item input:focus {
     border-color: #663d15;
     outline: none;
+}
+.appointment-info {
+    margin-bottom: 20px;
+}
+.appointment-item {
+    width: 140px;
+}
+.appointment-item input {
+    padding: 10px;
 }
 .main-footer {
     color: #ffffff;
