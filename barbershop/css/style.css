@@ -23,6 +23,9 @@ img {
     height: auto;
 }
 .button {
+    display: inline-block;
+    padding: 9px 30px 10px 30px;
+    margin-right: 16px;
     font: inherit;
     text-align: center;
     color: #ffffff;
@@ -35,6 +38,12 @@ img {
 .button:active,
 .button:focus {
     background-color: #663d15;
+}
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
 }
 .main-header {
     margin-bottom: 69px;
@@ -162,12 +171,12 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
-    padding: 45px 81px;
-    background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
+    padding: 45px 80px 45px 81px;
+    background-color: #f8f5f2;
     color: #000000;
-    background-image: url(../img/ten.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/ten.png), url("../img/index-column1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center, 0 0;
 }
 .index-columns h2 {
     font-size: 30px;
@@ -177,9 +186,15 @@ img {
     width: 380px;
 }
 .news h2,
-.gallery h2 {
+.gallery h2,
+.contact-info h2,
+.appointment h2 {
     margin: 0;
     margin-bottom: 20px;
+}
+.gallery h2 {
+    padding-left: 2px;
+    margin-bottom: 22px;
 }
 .news-list {
     list-style: none;
@@ -197,13 +212,45 @@ img {
 .new-item p {
     margin: 0;
 }
+.contact-info p {
+    margin: 0;
+    margin-bottom: 22px;
+}
+.button-news {
+    margin: 5px 0;
+}
 .gallery {
     width: 300px;
 }
 .gallery-content img {
-    background-color: #cccccc;
-    border: 7px solid #ffffff;
+    height: 164px;
+    width: 286px;
+    
   }
+.gallery-content {
+      height: 164px;
+      margin: 0;
+      background-color: #cccccc;
+      border: 7px solid #ffffff;
+  }
+.gallery-container {
+    position: relative;
+    height: 260px;
+    width: 300px;
+}
+.gallery-bottom {
+    position: absolute;
+    box-sizing: border-box;
+    width: 140px;
+    margin: 0;
+    bottom: 0;
+}
+.btn-left-back {
+    left: 0;
+}
+.btn-right-forward {
+    right: 0;
+}
 .contact-info {
     width: 380px;
 }
@@ -389,11 +436,11 @@ img {
     display: inline-block;
     color: #ffffff;
     background-color: #000000;
-    width: 47px;
-    height: 47px;
-    margin-right: 7px;
+    /* width: 47px; */
+    /* height: 47px; */
+    margin-right: 8px;
     text-align: center;
-    /* padding: 18px; */
+    padding: 13px 18px 12px 19px;
     vertical-align: middle;
 }
 .pagination-item-current {
