@@ -37,7 +37,7 @@ img {
     background-color: #663d15;
 }
 .main-header {
-    margin-bottom: 75px;
+    margin-bottom: 69px;
 }
 .main-header-logo {
     width: 371px;
@@ -81,8 +81,8 @@ img {
     width: 16px;
     height: 18px;
     position: absolute;
-    top: 29px;
-    left: 24px;
+    top: 28px;
+    left: 18px;
     background: url(../img/login.svg) 0 0 no-repeat;
     opacity: 0.3;
 }
@@ -108,7 +108,7 @@ img {
 .site-navigation a, 
 .user-navigation a {
     display: block;
-    padding: 26px 20px;
+    padding: 25px 20px 27px 20px;
     color: #ffffff;
 }
 .site-navigation a:hover, 
@@ -134,10 +134,28 @@ img {
 .feature-item {
     text-align: center;
     width: 300px;
+    border: 1px solid#663d15;
 }
 .feature-item h3 {
+    position: relative;
     font-size: 30px;
     line-height: 42px;
+    margin: 0;
+    margin-bottom: 60px;
+    border: 1px solid#663d15;
+}
+.feature-item h3::after {
+    content: "";
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+.feature-item p {
+    margin: 0 10px;
 }
 .index-columns {
     background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
