@@ -122,7 +122,7 @@ img {
     justify-content: space-between;
 }
 .features {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
 }
 .features-list {
     display: flex;
@@ -134,7 +134,7 @@ img {
 .feature-item {
     text-align: center;
     width: 300px;
-    border: 1px solid#663d15;
+    /* border: 1px solid#663d15; */
 }
 .feature-item h3 {
     position: relative;
@@ -142,28 +142,32 @@ img {
     line-height: 42px;
     margin: 0;
     margin-bottom: 60px;
-    border: 1px solid#663d15;
+    /* border: 1px solid#663d15; */
 }
 .feature-item h3::after {
     content: "";
     position: absolute;
-    bottom: -38px;
+    bottom: -32px;
     left: 50%;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
     transform: rotate(45deg);
+    margin-left: -10px;
 }
 .feature-item p {
     margin: 0 10px;
 }
 .index-columns {
-    background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
-    color: #000000;
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
-    padding: 50px 80px;
+    padding: 45px 81px;
+    background: #f8f5f2 url("../img/index-column1.jpg") 0 0 repeat;
+    color: #000000;
+    background-image: url(../img/ten.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .index-columns h2 {
     font-size: 30px;
@@ -172,11 +176,26 @@ img {
 .news {
     width: 380px;
 }
+.news h2,
+.gallery h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
 .news-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
 }
 .new-item time {
     text-transform: none;
+    margin: 0;
+}
+.new-item {
+    margin-bottom: 21px;
+}
+.new-item p {
+    margin: 0;
 }
 .gallery {
     width: 300px;
