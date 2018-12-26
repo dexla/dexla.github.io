@@ -461,8 +461,7 @@ img {
 }
 .form-input:hover + label,
 .form-input:focus + label {
-    /* color: #663d15; */
-    color: red;
+    color: #663d15;
 }
 .form-input:disabled + label {
     color: #000000;
