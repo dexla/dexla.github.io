@@ -38,14 +38,24 @@ a {
     width: 371px;
     height: 155px;
     order: 2;
-    }
+}
+.inner-page .main-header-logo {
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+    order: 0;
+}
 .main-navigation {
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
 }
 .site-navigation {
     width: 620px;
@@ -55,10 +65,14 @@ a {
 .user-navigation {
     width: 140px;
 }
+.inner-page .user-navigation {
+    margin-left: auto;
+}
 .main-navigation-wrapper {
     background-color: #000000;
     width: 100%;
     margin-bottom: 60px;
+    min-height: 72px;
 }
 .site-navigation, 
 .user-navigation {
@@ -105,7 +119,6 @@ a {
     justify-content: space-between;
     margin-bottom: 35px;
     padding: 50px 80px;
-    /* border: 1px solid #ffffff; */
 }
 .index-columns h2 {
     font-size: 30px;
@@ -147,6 +160,7 @@ a {
     background: #232323 url("../img/phone-footer.jpg") 0 0 repeat;
     margin-top: 65px;
     padding: 60px 0;
+    line-height: 24px;
 }
 .main-footer .container {
     display: flex;
@@ -191,9 +205,17 @@ a {
     font-size: 14px;
     line-height: 18px;
 }
-.page-title {
+.inner-page .main-header {
+    margin-bottom: 50px;
+    background-color: #000000;
+}
+.container .page-title {
+    display: block;
     font-size: 30px;
     line-height: 42px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
 .breadcrumbs-current { 
     color: #aba9a7;
@@ -201,6 +223,10 @@ a {
 .breadcrumbs {
     list-style: none;
     line-height: 20px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
 }
 .breadcrumbs a {
     color: #000000;
@@ -212,6 +238,7 @@ a {
 .filter legend {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 30px;
 }
 .filter fieldset {
     border: none;
@@ -269,12 +296,6 @@ a {
 .pagination-item-current:active {
     color: #000000;
     background-color: #ffffff;
-}
-.inner-page-item {
-    background: #f8f5f2 url("../img/phone-catalog.jpg") top center repeat;
-    color: #000000;
-    font-size: 14px;
-    line-height: 24px;
 }
 .product-list {
     list-style: none;
@@ -338,3 +359,6 @@ a {
 }
 /* разметка блоков */
 
+.visually-hidden {
+    display: none;
+}
