@@ -650,10 +650,17 @@ input[type="radio"]:checked + label::after {
     width: 460px;
     margin: 0;
     padding: 0;
+    /* padding-top: 4px; */
+}
+.product-info * {
+    /* border: 1px solid #000000; */
 }
 .product-info {
     line-height: 24px;
     width: 390px;
+    padding: 0px;
+    padding-top: 4px;
+    margin: 0;
 }
 .product-list {
     display: flex;
@@ -662,16 +669,15 @@ input[type="radio"]:checked + label::after {
     padding: 0;
 }
 .product-photo-full {
-    
     margin: 0;
     padding: 0;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 .product-photo-full img {
-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 }
 .product-list img {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
     width: 140px;
     margin-right: 20px;
 }
@@ -685,18 +691,64 @@ box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 .product-info h3 {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 27px;
 }
 .product-article {
-    text-align: right;
+    text-align: left;
     color: #aeaeae;
+    display: inline-block;
+    margin-left: 175px;
+}
+.product-price {
+    margin-bottom: 62px;
 }
 .product-price b {
+    display: inline-block;
     background-color: #e5e5e5;
+    vertical-align: bottom;
     text-align: center;
+    margin: 0;
+    width: 109px;
+    padding: 9px 0 10px 0;
+}
+.product-price .button {
+    width: 78px;
+    padding-left: 0;
+    padding-right: 0; 
+}
+.product-availability {
+    display: inline-block;
+}
+.product-text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 36px;
+    margin-top: 15px;
 }
 .complect {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
 }
+.complect li {
+    width: auto;
+    margin: 0;
+    margin-left: 21px;
+    position: relative;
+}
+.complect li::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: #000000 0 0 no-repeat;
+    left: -19px;
+    top: 8px;
+}
+
 /* попап */
 .modal {
     color: #000000;
