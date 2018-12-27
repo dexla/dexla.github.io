@@ -135,12 +135,6 @@ main {
 .site-navigation-current {
     position: relative;
 }
-.site-navigation-current a[href] {
-    pointer-events: none;
-}
-.site-navigation-current a:not([href]) {
-    background-color: #000000;
-}
 .site-navigation-current::after {
     content: "";
     position: absolute;
