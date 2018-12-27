@@ -1,4 +1,5 @@
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -8,6 +9,8 @@ body {
     font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     background: #000000 url("../img/phone-index.jpg") top center no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     width: 940px;
@@ -44,6 +47,9 @@ img {
     cursor: default;
     opacity: 0.5;
     background-color: #000000;
+}
+main {
+    flex-grow: 1;
 }
 .main-header {
     margin-bottom: 69px;
@@ -125,6 +131,24 @@ img {
 .site-navigation a:focus, 
 .user-navigation a:focus {
     background-color: #242424;
+}
+.site-navigation-current {
+    position: relative;
+}
+.site-navigation-current a[href] {
+    pointer-events: none;
+}
+.site-navigation-current a:not([href]) {
+    background-color: #000000;
+}
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background-color: #ffffff;
 }
 .main-navigation-wrapper .container {
     display: flex;
@@ -401,7 +425,7 @@ img {
     margin: 0;
     padding: 0;
     margin-bottom: 55px;
-    display: flex;
+    flex-wrap: wrap;
 }
 .breadcrumbs a {
     color: #000000;
