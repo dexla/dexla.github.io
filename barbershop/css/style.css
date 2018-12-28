@@ -505,7 +505,7 @@ main {
     border: 2px solid #000000;
     border-radius: 2px;
 }
-input[type="checkbox"]:checked + label::after {
+.form-list input[type="checkbox"]:checked + label::after {
     background-image: url("../img/cross.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -518,11 +518,11 @@ input[type="checkbox"]:checked + label::after {
     left: -39px;
     border:none;
 }
-.input[type="radio"] + label {
+.form-list input[type="radio"] + label {
     position: relative;
     display: block;
 }
-input[type="radio"] + label::before { 
+.form-list input[type="radio"] + label::before { 
     content: "";
     display: block;
     position: absolute;
@@ -533,7 +533,7 @@ input[type="radio"] + label::before {
     top: -1px;
     left: -43px;
 } 
-input[type="radio"]:checked + label::after {
+.form-list input[type="radio"]:checked + label::after {
     background-color: #000000;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -883,15 +883,59 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 }
 /* попап */
 .modal {
+    position: fixed;
     color: #000000;
-    background: #f8f5f2 url("../img/phone-login") 0 0 repeat;
+    background: #f8f5f2 url("../img/phone-login.jpg") 0 0 repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
 }
+.modal-login {
+    top: 120px;
+    left: 50%;
+    width: 300px;
+    padding: 50px 80px;
+    margin-left: -230px; /* (300+80+80)/2 */
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+}   
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 22px;
+    width: 22px;
+    background: url("../img/cross1.png") 0 0 no-repeat;
+    background-size: 100%;
+} 
 .modal h2 {
     font-size: 30px;
     line-height: 42px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.modal-description {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 15px;
+    padding-right: 40px;
     font: inherit;
     color: #000000;
     text-transform: uppercase;
@@ -900,11 +944,57 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 }
 .login-form input:focus {
     border-color: #663d15;
-    outline: none;
+    /* outline: none; */
+}
+.login-icon-user {
+    background: url("../img/user.svg") 270px center no-repeat;
+}
+.login-icon-password {
+    background: url("../img/lock.svg") 270px center no-repeat;
+}
+.login-form .login-help {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0;
 }
 .login-checkbox:hover,
 .login-checkbox:focus {
     color: #663d15;
+}
+.login-checkbox {
+    display: block;
+    position: relative;
+    margin-left: 32px;
+}
+.login-checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: -32px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+}
+.login-form input[type="checkbox"]:checked + .login-checkbox::after {
+    background-image: url("../img/cross.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    border:none;
+}
+.login-form input[type="checkbox"]:focus + .login-checkbox {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 .restore {
     color: #000000;
@@ -913,6 +1003,10 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 .restore:hover,
 .restore:focus {
     text-decoration: none;
+}
+.login-form .button {
+    width: 100%;
+    margin: 0;
 }
 /* разметка блоков */
 
