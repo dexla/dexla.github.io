@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body class="inner-page">
     <header class="main-header">
@@ -78,31 +78,31 @@
     </p>
 </div>
 </footer>
-<!-- <section class="madal madal-login">
-        <h2>Личный кабинет</h2>
-        <p>Ведите пожалуйста свой логин и пароль</p>
-        <form class="login-form" method="POST" action="#">
-            <p>
-              <label class="visually-hidden" for="login">Логин</label>
-              <input class="login-icon-user" type="text" name="login" id="login" placeholder="Логин">
-            </p>
-            <p>
-              <label class="visually-hidden" for="password">Пароль</label>
-              <input class="login-icon-password" type="password" name="password" id="password" placeholder="Пароль">
-            </p>
-            <p class="login-passwors-info">
-            <label class="login-checkbox">
-              <input  class="visually-hidden" type="checkbox" name="remember" checked>ЗАПОМНИТЕ МЕНЯ
-            </label>
-            <a class="restore" href="#">Я забыл пароль!</a>
-            </p>
-            <button class="button" type="submit">Войти</button>
-        </form>
-        <button type="button" class="modal-close">Закрыть</button>
-    </section>
-    <section class="madal madal-map">
-        <h2 class="visually-hidden">Как до нас добраться?</h2>
-        <button type="button" class="modal-close">Закрыть</button>
-    </section> -->
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Ведите пожалуйста свой логин и пароль</p>
+    <form class="login-form" method="POST" action="#">
+        <p>
+          <label class="visually-hidden" for="login">Логин</label>
+          <input class="login-icon-user" type="text" name="login" id="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" id="password" placeholder="Пароль">
+        </p>
+        <p class="login-help">
+        <input class="visually-hidden" type="checkbox" name="remember" id="checkbox-help"checked>
+        <label class="login-checkbox" for="checkbox-help">ЗАПОМНИТЕ МЕНЯ</label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+    </form>
+    <button type="button" class="modal-close">Закрыть</button>
+</section>
+<section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться?</h2>
+    <p><img src="img/map.png" width="780" height="568" alt="адрес на карте" ></p>
+    <button type="button" class="modal-close">Закрыть</button>
+</section>
 </body>
 </html>
