@@ -14,7 +14,7 @@ link.addEventListener("click", function(evt) {
     popap.classList.add("modal-show");
     if (storage) {
         login.value = storage;
-        password.focus ()
+        password.focus();
     } else {
         login.focus();
     }
@@ -40,11 +40,4 @@ form.addEventListener("submit", function(evt) {
         localStorage.setItem("login", login.value);
     }
 });
-window.addEventListener("keydown", function(evt) {
-    if (evt.code ===27) {
-        evt.preventDefault();
-        if (popap.classList.contains("modal-show")) {
-            popap.classList.remove("modal-show");
-        }
-    }
-})
+

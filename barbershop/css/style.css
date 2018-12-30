@@ -1034,6 +1034,7 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 }
 .modal-map p {
     margin: 0;
+    display: none;
 }
 /* разметка блоков */
 
