@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nerds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="main.js"></script>
 </head>
 <body>
     <header class="main-header">
-       <nav class="main-navigation">
+       <nav class="main-navigation container">
         <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии"> 
         </a>
@@ -21,33 +22,39 @@
             <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-            <li><a href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="корзина"></a></li>
             <li><a href="#">Корзина</a></li>
         </ul>
        </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
-        <section class="slider">
+      <section class="slider container">
+          
           <ul class="slider-list">
              <li class="slider-item">
-               <h2 class="feature-item">Долго, дорого, скрупулезно</h2>
-               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-               <a class="bottom-know-more" href="#">Узнать больше</a>  
-               <img src="img/slide1.png" width="698" height="413" alt="телефоны">
+                 <div class="slider-info">
+                    <h2 class="feature-item">Долго, дорого, скрупулезно.</h2>
+                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                    <a class="botton botton-know-more" href="#">Узнать больше</a>  
+                 </div>
+                    <p class="slider-foto"><img src="img/slide1.png" width="698" height="413" alt="телефоны"></p>
              </li>
-             <li class="slider-item">
+             <!-- <li class="slider-item">
+                    <div class="slider-info">
                <h2 class="feature-item">Любим математику как никто другой</h2>
                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                <a class="bottom-know-more" href="#">Узнать больше</a>
-               <img src="img/slide2.png" width="663" height="430" alt="мониторы">
+            </div>
+            <p class="slider-foto"><img src="img/slide2.png" width="663" height="430" alt="мониторы"></p>
              </li>
              <li class="slider-item">
+                    <div class="slider-info">
                <h2 class="feature-item">Только ночь, только хардкор</h2>
                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                <a class="bottom-know-more" href="#">Узнать больше</a>
-               <img src="img/slide3.png" width="759" height="411" alt="планшеты">        
-             </li>
+            </div>
+            <p class="slider-foto"><img src="img/slide3.png" width="759" height="411" alt="планшеты"></p>        
+             </li> -->
           </ul>
           <ul class="slides-switches">
               <li class="slide-radio"><button class="slide-button">Первый слайд</button></li>
@@ -55,7 +62,7 @@
               <li class="slide-radio"><button class="slide-button">Третий слайд</button></li>
           </ul>
         </section>
-        <section class="services">
+        <section class="services container">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-list">
                 <li class="service-item">
@@ -78,6 +85,7 @@
                 </li>
             </ul>
         </section>
+        <div class="about-us-columns container">
         <section class="about-us">
             <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
@@ -93,11 +101,11 @@
             <h2 class="visually-hidden">Cтатистика</h2>
             <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип">
             <p>с 2004 года Любим точность во всем:</p>
-            <table>
+            <table class="table">
                 <tr>
-                   <th>146%</th>
-                   <th>100%</th>
-                   <th>50%</th>
+                   <th>146<span>%</span></th>
+                   <th>100<span>%</span></th>
+                   <th>50<span>%</span></th>
                 </tr>
                 <tr>
                    <td>Уровень самотдачи</td>
@@ -106,9 +114,10 @@
                 </tr>
             </table>
         </section>
-        <section class="partners">
+        </div>
+        <section class="partners container">
             <h2 class="visually-hidden">Партнеры</h2>
-            <ul>
+            <ul class="logos">
                 <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="лого-1"></a></li>
                 <li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="лого-2"></a></li>
                 <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="лого-3"></a></li>
@@ -116,12 +125,13 @@
             </ul>
         </section>
         <article class="map">
-            <p class="contact-info">
+            <div class="contact-info">
             <b>NЁRDS DESIGN STUDIO</b>
             <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            </p><a class="contact-botton" href="#">Напишите нам</a></p>
+            <p class="tel-info">тел. +7 (812) 275-75-75</p>
+            <p><a class="contact-botton" href="#">Напишите нам</a></p>
+            </div>
             <img src="img/map.png" width="1440" height="416" alt="адрес на карте">
         </article>
     </main>
@@ -136,7 +146,7 @@
         <b class="footer-lozung">Давайте дружить, это выгодно!</b>
         <p class="footer-oferta">Скидка 10% для друзей из социальных сетей</p>
     </footer>
-    <section class="madal madal-write">
+    <section class="modal modal-write">
             <h2>Напешите нам</h2>
             <form class="login-form" method="POST" action="#">
                 <p>
