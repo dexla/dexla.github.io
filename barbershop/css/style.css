@@ -1036,7 +1036,6 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
     margin: 0;
     display: none;
 }
-/* разметка блоков */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
