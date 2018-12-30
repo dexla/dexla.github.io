@@ -25,13 +25,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-.main-header {
-    background-color: #eeeeee;
-    margin-top: 50px;
-}
-.main-header-logo {
-    display: flex;
-}
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -42,29 +35,32 @@ img {
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-top: 50px;
 }
 .site-navigation {
-    width: 440px;
+    width: 435px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 10px;
+}
+.site-navigation li {
+    margin-right: 45px;
+}
+.site-navigation li:last-child {
+    margin-right: 0px;
+}
+.site-navigation a, 
+.user-navigation a {
+    display: block;
+    padding: 28px 0px 20px 0;
 }
 .user-navigation {
     width: 160px;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 10px;
-}
-.main-navigation img{
-    width: 160px;
-    height: 65px;
+    text-align: end;
 }
 .slider {
-    padding-top: 10px;
+    position: relative;
 }
-
 .slider-item {
     display: flex;
 }
@@ -84,10 +80,13 @@ img {
 }
 .slider-foto {
     width: 760px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
 }
 .slides-switches {
+    position: absolute;
+    bottom: 98px;
+    left: 450px;
     display: flex;
     justify-content: center
 }
@@ -113,7 +112,7 @@ img {
 }
 .about-us-columns {
     display: flex;
-    margin-top: 75px ;
+    margin: 75px 0;
     justify-content: space-between;
     border-bottom: 2px solid #eeeeee;
 }
@@ -167,6 +166,10 @@ img {
 .table td {
     width: 33%;
 }
+.partners {
+    margin: 45px 0;
+    border-bottom: 2px solid #eeeeee;
+}
 .logos {
     display: flex;
     align-items: center;
@@ -182,7 +185,7 @@ img {
     top: 50px;
     left: 150px;
     padding: 50px;
-    background-color: rgb(190, 190, 190);
+    background-color: #ffffff;
     width: 220px;
 }
 .contact-info b {

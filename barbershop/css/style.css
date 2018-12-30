@@ -18,7 +18,6 @@ body {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    /* border: 1px solid #242424; */
 }
 a {
     text-decoration: none;
@@ -1064,4 +1063,8 @@ input[type="radio"].visually-hidden {
 .modal-error {
     animation-name: shake;
     animation-duration: .6s;
+}
+
+header * {
+    outline: 1px solid red;
 }
