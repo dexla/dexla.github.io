@@ -25,6 +25,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+.bottom {
+    padding: 25px;
+    background-color: fb565a;
+}
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -79,8 +83,9 @@ img {
     margin-bottom: 30px;
 }
 .slider-foto {
+    display: flex;
     width: 760px;
-    text-align: center;
+    justify-content: center;
     padding-top: 10px;
 }
 .slides-switches {
