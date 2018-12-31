@@ -27,7 +27,7 @@ img {
 }
 .botton {
     display: inline-block;
-    padding: 14px 0px 12px 0;
+    padding: 17px 0px 15px 0;
     font: inherit;
     text-align: center;
     color: #ffffff;
@@ -37,6 +37,8 @@ img {
     border: none;
     border-radius: 3px;
     width: 240px;
+    font-size: 16px;
+    line-height: 18px;
 }
 .container {
     width: 1160px;
@@ -219,30 +221,39 @@ img {
 .contact-info {
     display: flex;
     flex-direction: column;
-    margin-top: 135px;
-    padding: 50px;
+    padding: 50px 50px;
     background-color: #ffffff;
     width: 220px;
     z-index: 1;
+    position: absolute;
+    top: 54px;
+    left: 96px;
+    line-height: 18px;
+    color: #666666;
 }
 .contact-info b {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
+    color: #000000;
 }
 .tel-info {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 19px;
+    margin-bottom: 34px;
 }
 .map {
-    margin-bottom: 80px;
+    margin: 80px auto;
     min-height: 416px;
+    position: relative;
 }
 .map img {
     z-index: -1;
 }
 .gray {
     background-color: #eeeeee;
+}
+.contact-botton {
+    width: 220px;
 }
 
 
