@@ -1,5 +1,5 @@
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -25,21 +25,33 @@ img {
     max-width: 100%;
     height: auto;
 }
-.bottom {
-    padding: 25px;
-    background-color: fb565a;
+.botton {
+    display: inline-block;
+    padding: 14px 0px 12px 0;
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    border: none;
+    border-radius: 3px;
+    width: 240px;
 }
 .container {
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
 }
+.main-header {
+    background-color: #eeeeee;
+}
 .main-navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .site-navigation {
     width: 435px;
@@ -64,6 +76,7 @@ img {
 }
 .slider {
     position: relative;
+    margin-bottom: 80px;
 }
 .slider-item {
     display: flex;
@@ -80,7 +93,7 @@ img {
     margin-bottom: 27px;
 }
 .slider-info p {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
 }
 .slider-foto {
     display: flex;
@@ -97,27 +110,42 @@ img {
 }
 .services {
     border-bottom: 2px solid #eeeeee;
+    padding-bottom: 80px;
 }
 .services-list {
     display: flex;
     justify-content: space-between;
-    margin: 80px 0;
 }
 .service-item {
     width: 360px;
 }
 .service-item img {
-    margin-bottom: 27px;
+    margin-bottom: 18px;
 }
 .service-item h3 {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     text-transform: uppercase;
+}
+.service-item p {
+    margin-bottom: 30px;
+}
+.botton-red,
+.botton-green,
+.botton-yellow {
+    width: 160px;
+}
+.botton-green {
+    background-color: #00ca74;
+}
+.botton-yellow {
+    background-color: #efc84a;
 }
 .about-us-columns {
     display: flex;
-    margin: 75px 0;
+    margin-top: 40px;
+    padding-bottom: 59px;
     justify-content: space-between;
     border-bottom: 2px solid #eeeeee;
 }
@@ -125,6 +153,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 660px;
+    padding-top: 35px;
 }
 .about-us h3 {
     font-size: 45px;
@@ -132,14 +161,14 @@ img {
     margin-bottom: 32px;
 }
 .about-us p {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 .about-us b {
     text-transform: uppercase;
 }
 .about-us li {
-    margin-top: 30px;
-    margin-left: 35px;
+    margin-top: 24px;
+    margin-left: 36px;
 }
 .statistics {
     width: 360px;
@@ -148,31 +177,35 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 .statistics img {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
+}
+.table {
+    width: 100%;
 }
 .table th {
     padding: 20px 0;
     font-size: 45px;
     line-height: 10px;
     text-align: start;
+    width: 33%;
 }
 .table td {
+    padding: 15px 0;
     font-size: 16px;
     line-height: 18px;
+    
 }
 .table span {
     font-size: 24px;
     vertical-align: 15px;
     line-height: 0px;
 }
-.table td {
-    width: 33%;
-}
 .partners {
-    margin: 45px 0;
+    margin-top: 50px;
+    padding-bottom: 33px;
     border-bottom: 2px solid #eeeeee;
 }
 .logos {
@@ -186,12 +219,11 @@ img {
 .contact-info {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 150px;
+    margin-top: 135px;
     padding: 50px;
     background-color: #ffffff;
     width: 220px;
+    z-index: 1;
 }
 .contact-info b {
     font-size: 18px;
@@ -203,10 +235,15 @@ img {
     margin-bottom: 30px;
 }
 .map {
-    position: relative;
-    margin: 0 auto;
+    margin-bottom: 80px;
+    min-height: 416px;
 }
-
+.map img {
+    z-index: -1;
+}
+.gray {
+    background-color: #eeeeee;
+}
 
 
 

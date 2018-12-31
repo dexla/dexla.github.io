@@ -12,8 +12,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
 .container {
     width: 940px;
     margin: 0 auto;
@@ -692,7 +690,7 @@ main {
     margin-bottom: 17px;
 }
 .product-photo-full img {
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 }
 .product-list img {
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
@@ -1065,6 +1063,6 @@ input[type="radio"].visually-hidden {
     animation-duration: .6s;
 }
 
-header * {
+body * {
     outline: 1px solid red;
 }
