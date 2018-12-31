@@ -255,8 +255,44 @@ img {
 .contact-botton {
     width: 220px;
 }
-
-
+.main-footer {
+    display: flex;
+}
+.footer-social {
+    width: 361px;
+}
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo {
+    width: 560px;
+}
+.promo b {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.promo p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.social-button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 79px;
+    height: 79px;
+    background-color: #e1e1e1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.footer-social li {
+    margin-right: 12px;
+}
+.footer-social li:last-child {
+    margin-right: 0px;
+}
 
 
 
