@@ -149,7 +149,6 @@ img {
     margin-top: 40px;
     padding-bottom: 59px;
     justify-content: space-between;
-    border-bottom: 2px solid #eeeeee;
 }
 .about-us {
     display: flex;
@@ -206,17 +205,33 @@ img {
     line-height: 0px;
 }
 .partners {
-    margin-top: 50px;
     padding-bottom: 33px;
-    border-bottom: 2px solid #eeeeee;
+    padding-top: 50px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    opacity: 0.2;
 }
 .logos {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .logos li {
-    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000000;
+}
+.logos li:nth-child(1),
+.logos li:nth-child(4) {
+    width: 280px;
+}
+.logos li:nth-child(2),
+.logos li:nth-child(3) {
+    width: 300px;
+}
+.logos li:last-child {
+    border-right: none;
 }
 .contact-info {
     display: flex;
@@ -242,7 +257,7 @@ img {
     margin-bottom: 34px;
 }
 .map {
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
     min-height: 416px;
     position: relative;
 }
@@ -257,21 +272,29 @@ img {
 }
 .main-footer {
     display: flex;
+    margin-top: 68px;
+    margin-bottom: 50px;
 }
 .footer-social {
-    width: 361px;
+    width: 360px;
 }
 .footer-social ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    
 }
 .promo {
     width: 560px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .promo b {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .promo p {
     font-size: 16px;
