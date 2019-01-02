@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nerds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="main.js"></script>
 </head>
 <body>
     <header class="main-header">
-       <nav class="main-navigation">
-        <a class="main-header-logo" href="">
+       <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии"> 
         </a>
         <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-             <li><a href="#">Контакты</a></li>
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="customers.html">Клиенты</a></li>
+            <li><a class="site-navigation-current">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-                <li><a href="#">Корзина</a></li>
+            <li><a class="trash" href="trash.html">Корзина</a></li>
         </ul>
-       </nav> 
+       </nav>
     </header>
     <main class="container">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -143,27 +143,44 @@
                 <li><a class="pagination-item" href="#">3</a></li>
                 <li><a class="pagination-item-next" href="#">Следующая</a></li>
             </ul>
-        <article class="map">
-            <p class="contact-info">
-            <b>NЁRDS DESIGN STUDIO</b>
-            <p>191186, Санкт-Петербург,<br>
-               ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            </p><a class="contact-botton" href="#">Напишите нам</a></p>
-            <img src="img/map-marker.png" width="231" height="190" alt="метка на карте">
-        </article>    
-    </main>
-    <footer class="main-footer">
-            <div class="footer-social">
-               <ul>
-                 <li><a class="social-button" href="#">Вконтакте</a></li>
-                 <li><a class="social-button" href="#">Фейсбук</a></li>
-                 <li><a class="social-button" href="#">Твитер</a></li>
-               </ul>
+            <article class="map container">
+                    <div class="contact-info">
+                    <b>NЁRDS DESIGN STUDIO</b>
+                    <p>191186, Санкт-Петербург,<br>
+                       ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="tel-info">тел. +7 (812) 275-75-75</p>
+                    <p><a class="botton contact-botton" href="#">Напишите нам</a></p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.241946348693!2d30.320151162463382!3d59.93867281635325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1546214602607"
+                     width="1160" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <!-- <img src="img/map.png" width="1440" height="416" alt="адрес на карте"> -->
+                </article>
+            </main>
+            <footer class="main-footer container">
+                <div class="footer-social">
+                   <ul>
+                     <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span><svg xmlns="http://www.w3.org/2000/svg" 
+                        width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534
+                         1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468
+                          2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436
+                           3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 
+                           0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 
+                           3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909
+                            6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg></a></li>
+                     <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF"
+                         d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
+                         <li><a class="social-button" href="https://twitter.com"><span class="visually-hidden">Твитер</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 
+                                2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 
+                                1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47
+                                 0 0 1 .5.5z" fill="#fff"/></svg></a></li>
+                   </ul>
+                </div>
+                <div class="promo">
+                <b class="footer-lozung">Давайте дружить, это выгодно!</b>
+                <p class="footer-oferta">Скидка 10% для друзей из социальных сетей</p>
             </div>
-            <b class="footer-lozung">Давайте дружить, это выгодно!</b>
-            <p class="footer-oferta">Скидка 10% для друзей из социальных сетей</p>
-        </footer>
+            </footer>
         <section class="modal modal-write">
                 <h2>Напешите нам</h2>
                 <form class="login-form" method="POST" action="#">

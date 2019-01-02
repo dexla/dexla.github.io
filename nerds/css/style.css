@@ -1,5 +1,5 @@
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ img {
     padding-top: 50px;
 }
 .site-navigation {
-    width: 435px;
+    width: 482px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -66,13 +66,21 @@ img {
 .site-navigation li:last-child {
     margin-right: 0px;
 }
+
 .site-navigation a, 
 .user-navigation a {
     display: block;
     padding: 28px 0px 20px 0;
+    font-weight: bold;
+}
+.site-navigation a:hover, 
+.user-navigation a:hover,
+.site-navigation a:focus, 
+.user-navigation a:focus {
+    color: #fb565a;
 }
 .user-navigation {
-    width: 160px;
+    width: 115px;
     text-align: end;
 }
 .trash {
@@ -84,8 +92,24 @@ img {
     width: 15px;
     height: 15px;
     top: 32px;
-    left: 45px;
+    left: 0px;
     background: url("../img/cart-icon.svg") 0 0 no-repeat;
+}
+.site-navigation a:hover:not([href]),
+.site-navigation a:focus:not([href]) {
+    color: #000000;
+}
+.site-navigation-current {
+    position: relative;
+}
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+    left: 0px;
+    height: 2px;
+    background-color: #fb565a;
 }
 .slider {
     position: relative;
@@ -313,8 +337,8 @@ img {
     width: 220px;
     z-index: 1;
     position: absolute;
-    top: 54px;
-    left: 96px;
+    top: 40px;
+    right: 63px;
     line-height: 18px;
     color: #666666;
 }
@@ -399,9 +423,7 @@ img {
 .social-button:active {
     color: rgba(255, 255, 255, 0.3); 
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-    background-color: #d7373b;
-    /* filter: brightness(90%); */
-    /* background-color: rgb(255, 0, 0); */
+    filter: brightness(90%);
 }
 .social-button:active path {
     fill: #e37376;
