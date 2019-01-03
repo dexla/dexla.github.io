@@ -430,34 +430,101 @@ img {
     display: flex;
     justify-content: space-between;
 }
-.filter-title {
+.filter-title{
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
-.filter-title:last-child {
-    margin-bottom: 50px;
+.filter-list label {
+    display: block;
+    position: relative;
 }
-.catalog {
-    display: flex;
-    flex-direction: column;
-    width: 760px;
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/checkbox-off.svg") 0 0 no-repeat;
+    width: 26px;
+    height: 23px;
+    left: -35px;
+    top: -1px;
+    opacity: 1;
+}
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/checkbox-on.svg") 0 0 no-repeat;
+    width: 26px;
+    height: 23px;
+    left: -35px;
+    top:-1px;
+}
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/radio-off.svg") 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    left: -35px;
+    top: -1px;
+    opacity: 1;
+}
+input[type="radio"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/radio-on.svg") 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    left: -35px;
+    top: -1px;
 }
 .filter fieldset {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border: none;
 }
 .filter-option {
     margin-bottom: 17px;
     margin-left: 40px;
 }
+.filter-option:last-child {
+    margin-bottom: 0;
+}
+.filter-input + label {
+    opacity: .7;  
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+    opacity: 1;
+}
+.filter-input:disabled + label {
+    opacity: .3;  
+}
+
 .botton-show {
     font-size: 16px;
     line-height: 18px;
     color: #000000;
     font-weight: bold;
+    background-color: #eeeeee;
+}
+.botton-show:hover,
+.botton-show:focus {
+    background-color: #dfdfdf;
+}
+.botton-show:active {
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    filter: brightness(90%);
+    color: #959595;
+}
+.catalog {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
 }
 .sort-main {
     display: flex;
@@ -529,7 +596,7 @@ img {
     text-align: center;
     padding-top: 28px;
     padding-bottom: 43px;
-    overflow: overlay;
+    overflow: auto;
 }
 .catalog-item:hover .tool-tip,
 .catalog-item:focus .tool-tip {
@@ -562,7 +629,7 @@ img {
 .botton-price:focus {
     background-color: #e74246;
 }
-.botton-price:focus {
+.botton-price:active {
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
     filter: brightness(90%);
     color: #e37376;

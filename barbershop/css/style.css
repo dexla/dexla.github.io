@@ -485,10 +485,6 @@ main {
     color: #000000;
     opacity: 0.5;
 }
-.form-input:disabled + input {
-    color: #000000;
-    opacity: 0.5;
-}
 .form-list label {
     display: block;
     position: relative;
@@ -1063,6 +1059,6 @@ input[type="radio"].visually-hidden {
     animation-duration: .6s;
 }
 
-/* body * {
+body * {
     outline: 1px solid red;
-} */
+}

@@ -33,50 +33,58 @@
         <section class="filtres">
             <h2 class="visually-hidden">Фильтр товара</h2>
             <form class="filter" action="#" method="GET">
-               <fieldset>
+              <fieldset>
                 <legend class="filter-title">Стоимость:</legend>
-                <ul>
-                 <li class="filter-option">
-                    <label for="price-min">От</label>
-                    <input type="text" name="price-min" id="price-min">
-                </li>
-                <li class="filter-option">
-                    <label for="price-max">До</label>
-                    <input type="text" name="price-max" id="price-max">
-                </li>
-                </ul>
-                </fieldset>
-               <fieldset>
-                  <legend class="filter-title">Сетка:</legend>
-                  <ul>
-                    <li class="filter-option">
-                        <label><input class="visually-hidden" type="radio" name="setka" value="adapted" checked>Адаптивная</label>
-                    </li>
+                <ul class="filter-list">
                   <li class="filter-option">
-                         <label><input class="visually-hidden" type="radio" name="setka" value="fixed">Фиксированная</label>
+                    <label for="price-min">ОТ</label>
+                    <input type="text" name="price-min" id="price-min">
                   </li>
                   <li class="filter-option">
-                         <label><input class="visually-hidden" type="radio" name="setka" value="rubber">Резиновая</label>
+                    <label for="price-max">ДО</label>
+                    <input type="text" name="price-max" id="price-max">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="filter-title">Сетка:</legend>
+                <ul class="filter-list">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input" type="radio" name="setka" id="adapt" value="adapted" checked>
+                    <label for="adapt">Адаптивная</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input" type="radio" name="setka" id="fix" value="fixed">    
+                    <label for="fix">Фиксированная</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input" type="radio" name="setka" id="rubb" value="rubber">     
+                    <label for="rubb">Резиновая</label>
                   </li>
                 </ul>
                </fieldset>
                <fieldset>
                   <legend class="filter-title">Особенности:</legend>
-                   <ul>
+                   <ul class="filter-list">
                      <li class="filter-option">
-                        <label><input class="visually-hidden" type="checkbox" name="slider" checked>Слайдер</label>
+                        <input class="visually-hidden filter-input" type="checkbox" id="slider" name="slider" checked>
+                        <label for="slider">Слайдер</label>
                      </li>
                      <li class="filter-option">
-                        <label><input class="visually-hidden" type="checkbox" name="blok">Блок преимуществ</label>
+                        <input class="visually-hidden filter-input" type="checkbox" id="block" name="block">
+                        <label for="block">Блок преимуществ</label>
                      </li>
                      <li class="filter-option">
-                        <label><input class="visually-hidden" type="checkbox" name="news" checked>Новости</label>
+                        <input class="visually-hidden filter-input" type="checkbox" id="news" name="news" checked>
+                        <label for="news">Новости</label>
                      </li>
                      <li class="filter-option">
-                        <label><input class="visually-hidden" type="checkbox" name="galery">Галерея</label>
+                        <input class="visually-hidden filter-input" type="checkbox" id="galery" name="galery">
+                        <label for="galery">Галерея</label>
                      </li>
                      <li class="filter-option">
-                        <label><input class="visually-hidden" type="checkbox" name="trush">Корзина</label>
+                        <input class="visually-hidden filter-input" type="checkbox" id="trash" name="trash">
+                        <label for="trash">Корзина</label>
                      </li>
                    </ul>               
                   </fieldset>
@@ -91,14 +99,14 @@
                    <li><a href="#">По цене</a></li>
                    <li><a href="#">По типу</a></li>
                    <li><a href="#">По названию</a></li>
-                   <li><a href="#"><img src="img/icon-down-dir.svg"></a></li>
-                  <li><a href="#"><img src="img/icon-up-dir.svg"></a></li>
+                   <li><a href="#"><img src="img/icon-down-dir.svg" alt=""></a></li>
+                   <li><a href="#"><img src="img/icon-up-dir.svg" alt=""></a></li>
                 </ul>
             </div>
             <ul class="catalog-list">
                 <li class="catalog-item" tabindex="0">
                     <p class="browser"></p>
-                    <p><img src="img/img-sedona.png" width="360" height="576" alt="шаблон седона"</p>
+                    <p><img src="img/img-sedona.png" width="360" height="576" alt="шаблон седона"></p>
                     <div class="tool-tip">
                        <b>Sedona</b>
                        <p>Информационный сайт<br> для туристов</p>
@@ -107,7 +115,7 @@
                      </li>
                 <li class="catalog-item" tabindex="0">
                         <p class="browser"></p>
-                    <p><img src="img/img-pink.png" width="360" height="576" alt="шаблон пинк"</p>
+                    <p><img src="img/img-pink.png" width="360" height="576" alt="шаблон пинк"></p>
                     <div class="tool-tip">
                        <b>Pink app</b>
                        <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
@@ -116,7 +124,7 @@
                     </li>
                 <li class="catalog-item" tabindex="0">
                         <p class="browser"></p>
-                    <p><img src="img/img-barbershop.png" width="360" height="576" alt="шаблон бородинский"</p>
+                    <p><img src="img/img-barbershop.png" width="360" height="576" alt="шаблон бородинский"></p>
                     <div class="tool-tip">
                        <b>Barbershop</b>
                        <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
@@ -125,7 +133,7 @@
                     </li>
                 <li class="catalog-item" tabindex="0">
                         <p class="browser"></p>
-                    <p><img src="img/img-mishka.png" width="360" height="576" alt="шаблон мишка"</p>
+                    <p><img src="img/img-mishka.png" width="360" height="576" alt="шаблон мишка"></p>
                     <div class="tool-tip">
                         <b>Mishka</b>
                        <p>Интернет-магазин<br> вязаных игрушек</p>
@@ -134,7 +142,7 @@
                     </li>
                 <li class="catalog-item" tabindex="0">
                         <p class="browser"></p>
-                    <p><img src="img/img-aplus.png" width="360" height="576" alt="шаблон а плюс"</p>
+                    <p><img src="img/img-aplus.png" width="360" height="576" alt="шаблон а плюс"></p>
                     <div class="tool-tip">    
                        <b>A plus</b>
                        <p>Лендинг курсов повышения<br> квалификации</p>
@@ -143,7 +151,7 @@
                 </li>
                 <li class="catalog-item" tabindex="0">
                         <p class="browser"></p>
-                    <p><img src="img/img-kvast.png" width="360" height="576" alt="шаблон кваст"</p>
+                    <p><img src="img/img-kvast.png" width="360" height="576" alt="шаблон кваст"></p>
                     <div class="tool-tip">   
                        <b>Кваст</b>
                        <p>Промо-сайт производителя<br> крафтового кваса</p>
