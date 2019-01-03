@@ -430,16 +430,34 @@ img {
     display: flex;
     justify-content: space-between;
 }
-.filter legend {
+.filter-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.filter-title:last-child {
+    margin-bottom: 50px;
 }
 .catalog {
     display: flex;
     flex-direction: column;
     width: 760px;
+}
+.filter fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+.filter-option {
+    margin-bottom: 17px;
+    margin-left: 40px;
+}
+.botton-show {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: bold;
 }
 .sort-main {
     display: flex;
