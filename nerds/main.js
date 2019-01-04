@@ -1,4 +1,4 @@
-var link = document.querySelector(".contact-botton");
+var link = document.querySelector(".map .contact-botton");
 var popap = document.querySelector(".modal-write");
 var close = document.querySelector(".modal-close")
 
@@ -16,3 +16,4 @@ close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popap.classList.remove("modal-show");
 });
+
