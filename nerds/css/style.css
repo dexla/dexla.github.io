@@ -26,6 +26,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+main {
+    flex-grow: 1;
+}
 .botton {
     display: inline-block;
     padding: 17px 0px 15px 0;
