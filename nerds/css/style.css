@@ -404,14 +404,13 @@ main {
     margin-top: 19px;
     margin-bottom: 34px;
 }
-/* .map {
+.map {
     width: 100%;
     margin: 80px auto 0 auto;
     min-height: 416px;
     position: relative;
-    bottom: 0;
-} */
-/* .map img {
+}
+.map img {
     display: block;
 	position: absolute;
 	z-index: -1;
@@ -422,12 +421,11 @@ main {
     height: 416px;
     margin-left: auto;
     margin-right: auto;
-} */
-/* .map iframe {
+}
+.map iframe {
 	border: 0;
 	width: 100%;
-	min-width: 1160px;
-} */
+}
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -663,7 +661,6 @@ fieldset {
     justify-content: space-between;
     font-size: 14px;
     line-height: 18px;
-    
 }
 .sort a {
     opacity: .4;
