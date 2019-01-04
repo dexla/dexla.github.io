@@ -1,5 +1,5 @@
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     /* margin: 0;
     padding: 0; */
 }
@@ -131,7 +131,7 @@ main {
 }
 .slider {
     position: relative;
-    width: 1160px;
+    max-width: 1160px;
     height: 423px;
     margin: 0px auto;
 }
