@@ -409,6 +409,7 @@ main {
     margin: 80px auto 0 auto;
     min-height: 416px;
     position: relative;
+    bottom: 0;
 }
 .map img {
     display: block;
@@ -425,6 +426,7 @@ main {
 .map iframe {
 	border: 0;
 	width: 100%;
+	min-width: 1160px;
 }
 .contact-info {
     display: flex;
