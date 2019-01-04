@@ -452,6 +452,7 @@ main {
 }
 .main-footer .container {
     display: flex;
+    justify-content: space-between;
     margin-top: 62px;
     margin-bottom: 50px;
 }
