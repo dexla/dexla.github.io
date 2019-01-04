@@ -11,6 +11,7 @@ body {
     background: #000000 url("../img/phone-index.jpg") top center no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .container {
     width: 940px;
