@@ -426,7 +426,7 @@ main {
 .map iframe {
 	border: 0;
 	width: 100%;
-	min-width: 1160px;
+	/* min-width: 1160px; */
 }
 .contact-info {
     display: flex;
