@@ -450,7 +450,7 @@ main {
     filter: brightness(90%);
     color: #e37376;
 }
-.main-footer {
+.main-footer .container {
     display: flex;
     margin-top: 62px;
     margin-bottom: 50px;
