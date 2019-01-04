@@ -409,7 +409,7 @@ main {
     min-height: 416px;
     position: relative;
 }
-.map img {
+/* .map img {
     display: block;
 	position: absolute;
 	z-index: -1;
@@ -420,7 +420,7 @@ main {
     height: 416px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 .map iframe {
 	border: 0;
 	width: 100%;
