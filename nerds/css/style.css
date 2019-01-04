@@ -33,7 +33,7 @@ img {
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 240px;
     font-size: 16px;
     line-height: 18px;
@@ -46,7 +46,7 @@ img {
 }
 .main-header {
     background-color: #eeeeee;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 .main-navigation {
     display: flex;
@@ -177,12 +177,6 @@ img {
 .slider-info p {
     margin-bottom: 38px;
 }
-/* .slider-foto {
-    display: flex;
-    width: 760px;
-    justify-content: center;
-    padding-top: 10px;
-} */
 .slides-controls {
     position: absolute;
     bottom: 95px;
@@ -223,7 +217,8 @@ img {
 }
 .services {
     border-bottom: 2px solid #eeeeee;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+    margin-top: 80px;
 }
 .services-list {
     display: flex;
@@ -393,6 +388,7 @@ img {
 .logos a:active {
     opacity: .1;
 }
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -439,7 +435,7 @@ img {
 }
 .main-footer {
     display: flex;
-    margin-top: 68px;
+    margin-top: 62px;
     margin-bottom: 50px;
 }
 .footer-social {
@@ -480,12 +476,43 @@ img {
     display: flex;
     justify-content: space-between;
 }
+.filtres {
+    width: 260px;
+}
+.scale {
+    width: 70%;
+}
+.range-filter {
+    margin-top: -6px;
+}
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: 37px;
+    padding: 0 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
 .filter-title{
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.price-controls input[type="text"] {
+    width: 80px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+.price-controls {
+    display: flex;
+    justify-content: space-between;
 }
 .filter-list label {
     display: block;
@@ -533,13 +560,16 @@ img {
     left: -35px;
     top: -1px;
 }
-.filter fieldset {
-    margin-bottom: 40px;
+fieldset {
+    margin-bottom: 53px;
     border: none;
 }
+.grid-filter {
+    margin-bottom: 43px;
+}
 .filter-option {
-    margin-bottom: 17px;
-    margin-left: 40px;
+    margin-bottom: 16px;
+    margin-left: 37px;
 }
 .filter-option:last-child {
     margin-bottom: 0;
@@ -554,8 +584,8 @@ img {
 .filter-input:disabled + label {
     opacity: .3;  
 }
-
 .botton-show {
+    width: 100%;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
@@ -646,7 +676,7 @@ img {
     text-align: center;
     padding-top: 28px;
     padding-bottom: 43px;
-    overflow: auto;
+    overflow: hidden;
 }
 .catalog-item:hover .tool-tip,
 .catalog-item:focus .tool-tip {
@@ -698,7 +728,7 @@ img {
     background-color: #eeeeee;
     padding: 17px 21px 15px 20px;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
     /* border: 3px solid #eeeeee; */
 }
 .pagination-item-next {

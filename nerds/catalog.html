@@ -33,20 +33,27 @@
         <section class="filtres">
             <h2 class="visually-hidden">Фильтр товара</h2>
             <form class="filter" action="#" method="GET">
-              <fieldset>
+              <fieldset class="range-filter">
                 <legend class="filter-title">Стоимость:</legend>
-                <ul class="filter-list">
-                  <li class="filter-option">
-                    <label for="price-min">ОТ</label>
-                    <input type="text" name="price-min" id="price-min">
+                <ul class="range-controls">
+                  <li class="scale">
+                      <div class="bar"></div>
                   </li>
-                  <li class="filter-option">
-                    <label for="price-max">ДО</label>
-                    <input type="text" name="price-max" id="price-max">
+                  <li class="toggle min-toggle">
+                  </li>
+                  <li class="toggle max-toggle">
+                    </li>
+                </ul>
+                <ul class="price-controls">
+                  <li class="">
+                    ОТ <input type="text" class="price-min" id="price-min" value="0">
+                  </li>
+                  <li class="">
+                    ДО <input type="text" class="price-max" id="price-max" value="15000">
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="grid-filter">
                 <legend class="filter-title">Сетка:</legend>
                 <ul class="filter-list">
                   <li class="filter-option">
@@ -63,7 +70,7 @@
                   </li>
                 </ul>
                </fieldset>
-               <fieldset>
+               <fieldset class="special-filter">
                   <legend class="filter-title">Особенности:</legend>
                    <ul class="filter-list">
                      <li class="filter-option">
