@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="main-header">
@@ -30,11 +30,11 @@
             <input type="radio" id="btn-1" name="toggle" checked>
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
-            <ul class="slides-controls">
+            <div class="slides-controls">
                     <label class="slide-radio" for="btn-1"></label>
                     <label class="slide-radio" for="btn-2"></label>
                     <label class="slide-radio" for="btn-3"></label> 
-            </ul>
+            </div>
             <ul class="slider-list">
                <li class="slider-item">
                    <div class="slider-info">
@@ -163,21 +163,21 @@
     </div>
     </footer>
     <section class="modal modal-write">
-            <h2>Напешите нам</h2>
+            <h2>Напишите нам</h2>
             <form class="login-form" method="POST" action="#">
-                <p>
+                <p class="login-passwors-info">
                   <label for="name">Ваше имя:</label>
                   <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста">
                 </p>
-                <p>
+                <p class="login-passwors-info">
                   <label for="e-mail">Ваш e-mail:</label>
                   <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
                 </p>
-                <p class="login-passwors-info">
+                <p class="login-passwors-text">
                   <label for="letter">Текст письма:</label>
                   <textarea name="letter" id="letter" rows="10" cols="96" placeholder="В свободной форме"></textarea>
                 </p>
-                <button class="button" type="submit">Отправить</button>
+                <button class="botton" type="submit">Отправить</button>
             </form>
             <button type="button" class="modal-close">Закрыть</button>
         </section>

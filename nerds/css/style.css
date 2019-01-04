@@ -623,6 +623,7 @@ fieldset {
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
     filter: brightness(90%);
     color: #959595;
+    outline: none;
 }
 .catalog {
     display: flex;
@@ -769,11 +770,11 @@ fieldset {
 .pagination-item-current {
     padding: 14px 18px 12px 17px;
     border: 3px solid #eeeeee;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .pagination-item-current:hover,
 .pagination-item-current:focus {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .pagination-item-current:active {
     box-shadow: 0 0px rgba(0, 0, 0, 0.0);
@@ -827,7 +828,127 @@ fieldset {
 
 
 .modal {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     display: none;
+}
+.modal-write {
+    bottom: 20px;
+    left: 50%;
+    width: 760px;
+    padding: 65px 100px 85px 100px;
+    margin-left: -480px;
+    z-index: 10;
+}
+.modal h2 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+.login-form .botton {
+    width: 260px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    background-color: #fb565a;
+}
+.login-form .botton:hover,
+.login-form .botton:focus {
+    background-color: #e74246;
+}
+.login-form .botton:active {
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    filter: brightness(90%);
+    color: #e37376;
+    outline: none;
+}
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.login-form input {
+    width: 336px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 0 10px;
+    background-color: transparent;
+    opacity: .2;
+}
+.login-form input:hover {
+    opacity: .6;
+}
+.login-form input:focus {
+    opacity: 1;
+    outline: none;
+}
+.login-passwors-info {
+    width: 360px;
+    margin: 30px 0;
+}
+.login-passwors-info label {
+    display: block;
+    margin-bottom: 9px;
+}
+.login-passwors-text textarea {
+    margin-bottom: 46px;
+    width: 760px;
+    box-sizing: border-box;
+    height: 117px;
+    padding: 10px;
+    margin-top: 9px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    background-color: transparent;
+    opacity: .2;
+}
+.login-passwors-text textarea:hover {
+    opacity: .6;
+}
+.login-passwors-text textarea:focus {
+    opacity: 1;
+    outline: none;
+}
+.modal-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+}
+.modal-close::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fb565a;
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fb565a;
+    transform: rotate(-45deg);
+}
+.modal-show {
+    display: block;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
