@@ -404,13 +404,13 @@ main {
     margin-top: 19px;
     margin-bottom: 34px;
 }
-.map {
-    /* width: 100%; */
+/* .map {
+    width: 100%;
     margin: 80px auto 0 auto;
     min-height: 416px;
     position: relative;
     bottom: 0;
-}
+} */
 /* .map img {
     display: block;
 	position: absolute;
@@ -423,11 +423,11 @@ main {
     margin-left: auto;
     margin-right: auto;
 } */
-.map iframe {
+/* .map iframe {
 	border: 0;
 	width: 100%;
-	/* min-width: 1160px; */
-}
+	min-width: 1160px;
+} */
 .contact-info {
     display: flex;
     flex-direction: column;
