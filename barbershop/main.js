@@ -35,7 +35,7 @@ close2.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
     if (!login.value || !password.value) {
         evt.preventDefault();
-        popap.classList.add("modal-error")
+        popap.classList.add("modal-error");
     } else {
         localStorage.setItem("login", login.value);
     }
