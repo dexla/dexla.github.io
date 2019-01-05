@@ -1,5 +1,5 @@
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -122,9 +122,10 @@ img {
     margin-bottom: 22px;
 }
 .option-list .option-item:first-child {
-    margin-right: 800px;
-    background-color: #81b3d2;
+    padding-right: 800px;
+    background: #81b3d2 url("../img/sity.jpg") 400px 0 no-repeat;
     color: #fff;
+    /* background-image:; */
 }
 .option-list-special {
     width: 1200px;
@@ -150,8 +151,8 @@ img {
     text-align: center;
 }
 .option-list .option-item:nth-child(3) {
-    margin-left: 800px;
-    background-color: #81b3d2;
+    padding-left: 800px;
+    background: #81b3d2 url("../img/montanya.jpg") 0px 0 no-repeat;
     color: #fff;
 }
 .interes {
