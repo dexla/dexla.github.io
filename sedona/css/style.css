@@ -64,7 +64,7 @@ img {
     margin-bottom: 47px;
 }
 .options {
-    padding: 60px 0;
+    padding-top: 60px;
     background-color: #fff;
 }
 .options h3 {
@@ -72,6 +72,7 @@ img {
     width: 158px;
     text-align: center;
     margin-top: 46px;
+    margin-bottom: 25px;
 }
 .option-title {
     text-align: center;
@@ -102,12 +103,11 @@ img {
     flex-direction: column;
     align-items: center;
     background-color: #eeeeee;
-    /* padding: 30px; */
-    /* justify-content: center; */
 }
 .option-item p {
     text-align: center;
     width: 310px;
+    margin-bottom: 22px;
 }
 .option-list .option-item:first-child {
     margin-right: 800px;
@@ -117,15 +117,51 @@ img {
 .option-list-special {
     width: 1200px;
     display: flex;
+    flex-wrap: wrap;
 }
 .option-item-special {
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 115px 0 81px 0;
+    /* margin: 115px 0 81px 0; */
+}
+.option-item-special p {
+    width: 290px;
+    text-align: center;
 }
 .option-list .option-item:nth-child(3) {
     margin-left: 800px;
     background-color: #81b3d2;
     color: #fff;
 }
+.interes {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+.interes h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.interes p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.button-search {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
 
 
 
