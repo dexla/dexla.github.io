@@ -25,35 +25,107 @@ img {
     max-width: 100%;
     height: auto;
 }
-.main-header {
-    width: 100%;
-    background-color: #fff;
-}
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 .logos {
-    background: #fff url(../img/background-photo.jpg) center center no-repeat;
-    height: 773px;
-    width: 1200px;
+    height: 432px;
     text-align: center;
+    background: url("../img/krilya.png") 0 bottom no-repeat;
 }
 .main-navigation {
     display: flex;
+    justify-content: center;
+    height: 56px;
+    background-color: #fff;
+}
+.main-header-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 138px;
 }
 .site-navigation {
+    width: 1056px;
     display: flex;
-    flex-direction: space-between;
     align-items: center;
-    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
-
-
-
-
+.logos {
+    padding-top: 76px;
+}
+.greeting li {
+    margin-bottom: 47px;
+}
+.options {
+    padding: 60px 0;
+    background-color: #fff;
+}
+.options h3 {
+    font-size: 21px;
+    width: 158px;
+    text-align: center;
+    margin-top: 46px;
+}
+.option-title {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.option-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.option-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+}
+.option-item {
+    width: 400px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    /* padding: 30px; */
+    /* justify-content: center; */
+}
+.option-item p {
+    text-align: center;
+    width: 310px;
+}
+.option-list .option-item:first-child {
+    margin-right: 800px;
+    background-color: #81b3d2;
+    color: #fff;
+}
+.option-list-special {
+    width: 1200px;
+    display: flex;
+}
+.option-item-special {
+    width: 400px;
+}
+.option-list .option-item:nth-child(3) {
+    margin-left: 800px;
+    background-color: #81b3d2;
+    color: #fff;
+}
 
 
 
