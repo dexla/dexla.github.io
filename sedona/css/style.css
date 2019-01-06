@@ -214,7 +214,7 @@ img {
 }
 .filtres {
     background: #fff url("../img/filter-background.jpg") 0 -56px no-repeat;
-    padding-top: 30px;
+    padding-top: 27px;
 }
 .filter {
     display: flex;
@@ -225,18 +225,72 @@ img {
     line-height: 21px;
     text-transform: uppercase;
 }
-.filter fieldset {
+.filter .infro-filter, 
+.filter .type-filter{
     border: none;
     width: 150px;
 }
 .filter legend {
     font-weight: bold;
+    margin-bottom: 25px;
 }
 .filtres .range-filter {
-    width: 317px;
+    width: 320px;
+    border: none;
+    margin-left: 335px;
 }
-
-
+.form-option {
+    font-size: 14px;
+    margin-left: 39px;
+    margin-bottom: 25px;
+}
+.type-filter .form-option {
+    margin-left: 42px;
+}
+.type-filter {
+    margin-left: 104px;
+}
+.range-filter legend {
+    margin-bottom: 10px;
+}
+.price-controls input {
+    border: none;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px 50px 5px 52px;
+    font-size: 14px;
+    line-height: 21px;
+    width: 55px;
+    outline: none;
+}
+.price-controls input:first-child {
+    border-right: 2px solid #fff;
+    height: 10px;
+    border-radius: 0;
+}
+.price-controls {
+    border: 2px solid #fff;
+    width: 316px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: transparent;
+    margin-bottom: 34px;
+}
+.button-show {
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 137px;
+    margin-top: 20px;
+    padding: 6px 0 5px 0px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    align-self: center;
+    margin-left: 86px;
+    cursor: pointer;
+}
 
 
 

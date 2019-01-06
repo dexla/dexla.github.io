@@ -28,20 +28,20 @@
         <h1 class="visually-hidden">Страница сортировки</h1>
         <section class="filtres">
             <h2 class="visually-hidden">Фильтр отелей</h2>
-            <form action="#" class="filter" method="GET">
+            <form action="#" class="filter" method="GET" id="filtr">
             <fieldset class="infro-filter">
                 <legend>Инфраструктура:</legend>
                 <ul class="form-list">
                     <li class="form-option">
-                        <input type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                         <label for="">Бассейн</label>             
                     </li>
                     <li class="form-option">
-                        <input type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                         <label for="">Парковка</label> 
                     </li>
                     <li class="form-option">
-                        <input type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                         <label for="">Wi-Fi</label> 
                     </li>
                 </ul>
@@ -50,21 +50,21 @@
                 <legend>Тип жилья:</legend>
                 <ul class="form-list">
                     <li class="form-option">
-                        <input type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                         <label for="">Гостиница</label> 
                     </li>
                     <li class="form-option">
-                        <input type="checkbox">
-                        <label for="">Отель</label> 
+                        <input class="visually-hidden" type="checkbox">
+                        <label for="">Мотель</label> 
                     </li>
                     <li class="form-option">
-                        <input type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                         <label for="">Апартаменты</label> 
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="range-filter">
-                <legend>Стоимость в сутки(р):</legend>
+                <legend>Стоимость в сутки (р):</legend>
                     <ul class="range-controls">
                         <li class="scale">
                             <div class="bar"></div>
@@ -72,12 +72,11 @@
                         <li class="toggle min-togle"></li>
                         <li class="toggle min-togle"></li>
                     </ul>
-                    <ul class="price-conrols">
-                        <li><input type="text" class="price-min" name="min-price" value="ОТ 0"></li>
-                        <li><input type="text" class="price-max" name="max-price" value="ДО 3000"></li>
+                    <ul class="price-controls">
+                        <li><input type="text" class="price-min" name="min-price" value="ОТ 0"><input type="text" class="price-max" name="max-price" value="ДО 3000"></li>
                     </ul>
+                    <button type="submit" class="button button-show" form="filtr">Показать</button>
             </fieldset>
-            <button type="submit" class="button button-show">Показать</button>
         </form>
         </section>
         <section class="catalog">
