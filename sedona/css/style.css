@@ -214,6 +214,7 @@ img {
 }
 .filtres {
     background: #fff url("../img/filter-background.jpg") 0 -56px no-repeat;
+    padding-top: 30px;
 }
 .filter {
     display: flex;
@@ -226,11 +227,14 @@ img {
 }
 .filter fieldset {
     border: none;
+    width: 150px;
 }
 .filter legend {
     font-weight: bold;
 }
-
+.filtres .range-filter {
+    width: 317px;
+}
 
 
 
