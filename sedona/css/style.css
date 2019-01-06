@@ -1,5 +1,5 @@
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,6 @@ main {
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
-    border-radius: 5px;
     font-size: 21px;
     line-height: 26px;
     padding: 17px 0px 15px 0;
@@ -71,6 +70,22 @@ main {
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.site-navigation li:nth-child(2) {
+    margin-right: 140px;
+}
+.site-navigation li:nth-child(3) {
+    margin-left: 110px;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #dbe9f2;
+}
+.site-navigation a:active {
+    color: #e4e4e4;
+}
+.site-navigation-current {
+    color: #c1b9b4;
 }
 .logos {
     padding-top: 76px;
@@ -128,7 +143,6 @@ main {
     padding-right: 800px;
     background: #81b3d2 url("../img/sity.jpg") 400px 0 no-repeat;
     color: #fff;
-    /* background-image:; */
 }
 .option-list-special {
     width: 1200px;
@@ -186,6 +200,14 @@ main {
     background-color: #766357;
     vertical-align: middle;
 }
+.button-search:hover,
+.button-search:focus {
+    background-color: #604e43;
+}
+.button-search:active {
+    background-color: #503e33;
+    color: #75655a;
+}
 .main-footer {
     background: #fff url(../img/map.jpg) 0 0 no-repeat;
     height: 593px;
@@ -199,7 +221,6 @@ main {
     padding: 36px 0;
     align-self: flex-end;
     width: 1200px;
-    /* padding-left: 30px; */
 }
 .footer-social p:first-child {
     font-size: 21px;
@@ -231,10 +252,25 @@ main {
     align-items: center;
     justify-content: center;
 }
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+.social-button:active {
+    background-color: #5496bd;
+}
+.social-button:active path {
+    fill: #84b3cf;
+}
 .footer-copyright a {
     height: 40px;
 }
-
+.footer-copyright a:hover path {
+    fill: #84b3cf;
+}
+.footer-copyright a:active path {
+    fill: #bbb3b3;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
