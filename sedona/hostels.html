@@ -13,83 +13,115 @@
 <body class="container">
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/logo.png" alt="логотип" width="138" height="70">
             </a>
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="content.html">Фото и видео</a></li>
                 <li><a href="map_state.html">Карта штата</a></li>
-                <li><a href="hostels.html">Гостиницы</a></li>
+                <li><a class="site-navigation-current">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="box">
-        <h1 class="visually-hidden">Отели города</h1>
-        <section class="logos">
-            <h2 class="visually-hidden">Приветствие</h2>
-            <ul class="greeting">
-                <li><img src="img/welcome.png" alt="вэлком" width="256" height="86"></li>
-                <li><img src="img/Sedona.png" alt="седона" width="458" height="78"></li>
-                <li><img src="img/Because-the-Grand-Canyon-sucks.png" alt="гранд-коньон" width="296" height="80"></li>
-            </ul>
-        </section>
-        <section class="options">
-            <h2 class="option-title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</h2>
-            <p class="option-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-            <ul class="option-list">
-                <li class="option-item">
-                    <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-                    <p class="numb">— №1 —</p>
-                    <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-                </li>
-                <li>
-                    <ul class="option-list-special">
-                        <li class="option-item-special">
-                            <h3>Жилье</h3>
-                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <h1 class="visually-hidden">Страница сортировки</h1>
+        <section class="filtres">
+            <h2 class="visually-hidden">Фильтр отелей</h2>
+            <form action="#" class="filter" method="GET">
+            <fieldset class="infro-filter">
+                <legend>Инфраструктура:</legend>
+                <ul class="form-list">
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Бассейн</label>             
+                    </li>
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Парковка</label> 
+                    </li>
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Wi-Fi</label> 
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="type-filter">
+                <legend>Тип жилья:</legend>
+                <ul class="form-list">
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Гостиница</label> 
+                    </li>
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Отель</label> 
+                    </li>
+                    <li class="form-option">
+                        <input type="checkbox">
+                        <label for="">Апартаменты</label> 
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="range-filter">
+                <legend>Стоимость в сутки(р):</legend>
+                    <ul class="range-controls">
+                        <li class="scale">
+                            <div class="bar"></div>
                         </li>
-                        <li class="option-item-special">
-                            <h3>Еда</h3>
-                            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-                        </li>
-                        <li class="option-item-special">
-                            <h3>Сувениры</h3>
-                            <p>Не только китайского, но и местного производства!</p>
-                        </li>
+                        <li class="toggle min-togle"></li>
+                        <li class="toggle min-togle"></li>
                     </ul>
+                    <ul class="price-conrols">
+                        <li><input type="text" class="price-min" name="min-price" value="ОТ 0"></li>
+                        <li><input type="text" class="price-max" name="max-price" value="ДО 3000"></li>
+                    </ul>
+            </fieldset>
+            <button type="submit" class="button button-show">Показать</button>
+        </form>
+        </section>
+        <section class="catalog">
+            <h2 class="visually-hidden">Итог поиска</h2>
+            <p>Найдено:</p>
+            <div class="sort-main">
+                <h3>Сортировка:</h3>
+                <ul>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По рейтингу</a></li>
+                    <li><a href="#"><img src="img/icon-up-dir.svg" alt="по-уменьшению"></a></li>
+                    <li><a href="#"><img src="img/icon-down-dir.svg" alt="по-edtkbxtyb."></a></li>
+                </ul>
+            </div>
+            <ul class="hotel-list">
+                <li class="hotel-item">
+                    <h3>Amara Resort & Spa</h3>
+                    <p>Гостиница</p>
+                    <P>от 4000 Р.</P>
+                    <a class="button button-more" href="#">Подробнее</a>
+                    <a class="button button-booking" href="#">Забронировать</a>
+                    <P>Рейтинг</P>
                 </li>
-                <li class="option-item">
-                    <h3>ТАМ ЕСТЬ<br> Мост дьявола</h3>
-                    <p class="numb">— №2 —</p>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <li class="hotel-item">
+                    <h3>Desert Quail Inn</h3>
+                    <p>Мотель</p>
+                    <P>от 3000 Р.</P>
+                    <a class="button button-more" href="#">Подробнее</a>
+                    <a class="button button-booking" href="#">Забронировать</a>
+                    <P>Рейтинг</P>
                 </li>
-                <li class="option-item">
-                    <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-                    <p class="numb">— №3 —</p>
-                    <p>ВСЕ достопримечательности<br> находятся очень близко</p>
-                </li>
-                <li class="option-item">
-                    <h3>КРАСИВАЯ ДОРОГА</h3>
-                    <p class="numb">— №4 —</p>
-                    <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
-                </li>
-                <li class="option-item">
-                    <h3>МАЛО ТУРИСТОВ</h3>
-                    <p class="numb">— №5 —</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                <li class="hotel-item">
+                    <h3>Villas at Poco Diablo</h3>
+                    <p>Апартаменты</p>
+                    <P>от 2000 Р.</P>
+                    <a class="button button-more" href="#">Подробнее</a>
+                    <a class="button button-booking" href="#">Забронировать</a>
+                    <P>Рейтинг</P>
                 </li>
             </ul>
         </section>
-        <section class="interes">
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a href="#" class="button button-search">ПОИСК ГОСТИНИЦЫ В седоне</a>
-        </section>
-    </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer-inner">
         <div class="footer-social">
             <p>#visitSEDONA</p>
             <ul>
