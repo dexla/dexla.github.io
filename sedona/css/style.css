@@ -1,5 +1,5 @@
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
 }
@@ -45,6 +45,10 @@ img {
 }
 .container {
     width: 1200px;
+    margin: 0 auto;
+}
+.container-inner-page {
+    width: 1056px;
     margin: 0 auto;
 }
 .logos {
@@ -291,8 +295,15 @@ img {
     margin-left: 86px;
     cursor: pointer;
 }
-
-
+.main-inner-page {
+    background-color: #fff;
+}
+.sort-main {
+    display: flex;
+}
+.sort {
+    display: flex;
+}
 
 
 
