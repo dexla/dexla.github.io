@@ -95,6 +95,10 @@ img {
 .site-navigation-current {
     color: #c1b9b4;
 }
+.site-navigation .site-navigation-current:hover,
+.site-navigation .site-navigation-current:focus {
+    color: #c1b9b4;
+}
 .logos {
     padding-top: 76px;
 }
