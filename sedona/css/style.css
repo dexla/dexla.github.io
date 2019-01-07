@@ -28,8 +28,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-.box {
+main {
     flex-grow: 5;
+}
+.box {
+    
     background: #fff url("../img/background-photo.jpg") 0 -56px no-repeat;
 }
 .button {
@@ -47,10 +50,6 @@ img {
     width: 1200px;
     margin: 0 auto;
 }
-/* .container-inner-page {
-    width: 1056px;
-    margin: 0 auto;
-} */
 .logos {
     height: 432px;
     text-align: center;
@@ -228,6 +227,35 @@ img {
     display: block;
     position: relative;
 }
+.scale {
+    margin-top: 10px;
+    height: 2px;
+    background-color: #ffffff5b;
+}
+.scale .bar {
+    width: 84%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.range-controls {
+    position: relative;
+    margin-bottom: 12px;
+}
+.toggle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: -9px;
+    left: 0px;
+    border: 8px solid #ffffff;
+    background-color: #9e9e9e;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgb(126, 126, 126);
+    cursor: pointer;
+}
+.max-toggle {
+    left: 260px;
+}
 .filtres input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
@@ -309,7 +337,7 @@ img {
     height: 32px;
     border-radius: 2px;
     background-color: transparent;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 }
 .button-show {
     border: 2px solid #fff;

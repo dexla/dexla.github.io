@@ -65,15 +65,15 @@
             </fieldset>
             <fieldset class="range-filter">
                 <legend>Стоимость в сутки (р):</legend>
+                    <ul class="price-controls">
+                        <li><input type="text" class="price-min" name="min-price" value="ОТ 0"><input type="text" class="price-max" name="max-price" value="ДО 3000"></li>
+                    </ul>  
                     <ul class="range-controls">
                         <li class="scale">
                             <div class="bar"></div>
                         </li>
-                        <li class="toggle min-togle"></li>
-                        <li class="toggle min-togle"></li>
-                    </ul>
-                    <ul class="price-controls">
-                        <li><input type="text" class="price-min" name="min-price" value="ОТ 0"><input type="text" class="price-max" name="max-price" value="ДО 3000"></li>
+                        <li class="toggle min-toggle"></li>
+                        <li class="toggle max-toggle"></li>
                     </ul>
                     <button type="submit" class="button button-show" form="filtr">Показать</button>
             </fieldset>
