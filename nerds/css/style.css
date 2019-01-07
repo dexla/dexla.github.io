@@ -582,6 +582,9 @@ main {
     left: -35px;
     top:-1px;
 }
+.filtres input[type="checkbox"]:checked + label::before {
+    display: none;
+}
 .filtres input[type="radio"] + label::before {
     content: "";
     display: block;
