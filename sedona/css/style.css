@@ -592,7 +592,7 @@ input[type="radio"].visually-hidden {
 
 }
 .modal-search {
-    width: 451px;
+    width: 456px;
     bottom: 30px;
     left: 391px;
     padding: 56px;
@@ -627,7 +627,7 @@ input[type="radio"].visually-hidden {
 .search-form-info input {
     border: none;
     background-color: #f2f2f2;
-    width: 315px;
+    width: 320px;
     height: 38px;
     padding: 0 15px;
     font-weight: bold;
