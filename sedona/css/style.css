@@ -63,8 +63,9 @@ main {
 }
 .main-header-logo {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    left: 606px;
     width: 138px;
 }
 .site-navigation {
@@ -182,6 +183,9 @@ main {
     padding-left: 800px;
     background: #81b3d2 url("../img/montanya.jpg") 0px 0 no-repeat;
     color: #fff;
+}
+.form-request {
+    display: none;
 }
 .interes {
     position: relative;
@@ -449,13 +453,10 @@ main {
 .hotel-item {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     padding: 24px 0 31px 238px;
     border-bottom: 1px solid #eeeeee;
     font-size: 14px;
     line-height: 21px;
-    /* height: 90px; */
 }
 .hotel-info {
     display: flex;
@@ -806,3 +807,17 @@ button[name="number-plus"]:active::after,
 button[name="number-mynus"]:active::before {
   background-color: #81b3d2;
 }
+.modal-show {
+    display: block;
+}
+@keyframes shake{
+    0%, 100%{ transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90%{ transform: translateX(-10px); }
+    20%, 40%, 60%, 80%{transform: translateX(10px);}
+  }
+  
+  .modal-error{
+    animation-name: shake;
+    animation-duration: 0.5s;
+  }
+  

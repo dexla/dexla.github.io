@@ -86,42 +86,44 @@
             <h2>Заинтересовались?</h2>
             <p class="interes-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a href="#" class="button button-search">ПОИСК ГОСТИНИЦЫ В седоне</a>
-            <h2 class="visually-hidden">Поиск отелей</h2>
-            <form class="search-form" method="POST" action="#">
-                <div class="search-form-info">
-                  <label for="check-in">Дата заезда:</label>
-                  <p class="select-area">
-                      <input type="text" name="check-in" id="check-in" placeholder="24 Апреля 2017">
-                      <button name="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
-                  </p>
-                </div>
-                <div class="search-form-info">
-                  <label for="check-out">Дата выезда:</label>
-                  <p class="select-area">
-                      <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
-                      <button name="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
-                  </p> 
-                </div>
-                <div class="sum-column">
-                <div class="search-form-sum">
-                    <label for="adult">Взрослые:</label>
+            <div class="form-request">
+                <h2 class="visually-hidden">Поиск отелей</h2>
+                <form class="search-form" method="POST" action="#">
+                    <div class="search-form-info">
+                    <label for="check-in">Дата заезда:</label>
                     <p class="select-area">
-                        <button name="number-plus"></button>
-                        <input type="text" name="adult" id="adult" placeholder="2">
-                        <button name="number-mynus"></button>
+                        <input class="check-in" type="text" name="check-in" id="check-in" placeholder="24 Апреля 2017">
+                        <button name="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
+                    </p>
+                    </div>
+                    <div class="search-form-info">
+                    <label for="check-out">Дата выезда:</label>
+                    <p class="select-area">
+                        <input class="check-out" type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+                        <button name="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
                     </p> 
+                    </div>
+                    <div class="sum-column">
+                    <div class="search-form-sum">
+                        <label for="adult">Взрослые:</label>
+                        <p class="select-area">
+                            <button name="number-plus"></button>
+                            <input class="adult-in" type="text" name="adult" id="adult" placeholder="2">
+                            <button name="number-mynus"></button>
+                        </p> 
+                    </div>
+                    <div class="search-form-sum">
+                        <label for="child">Дети:</label>
+                        <p class="select-area">
+                            <button name="number-plus"></button>
+                            <input type="text" name="child" id="child" placeholder="0">
+                            <button name="number-mynus"></button>
+                        </p>    
+                    </div>
                 </div>
-                <div class="search-form-sum">
-                    <label for="child">Дети:</label>
-                    <p class="select-area">
-                        <button name="number-plus"></button>
-                        <input type="text" name="child" id="child" placeholder="0">
-                        <button name="number-mynus"></button>
-                    </p>    
-                </div>
+                    <button class="button button-popap" type="submit">Найти</button>
+                </form>
             </div>
-                <button class="button button-popap" type="submit">Найти</button>
-            </form>
         </section>
     </div>
     </main>
