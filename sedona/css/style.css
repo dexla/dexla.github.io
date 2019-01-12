@@ -63,7 +63,7 @@ main {
 }
 .main-header-logo {
     position: absolute;
-    left: 46%;
+    /* left: 46%; */
     margin: 0 auto;
     width: 138px;
 }
