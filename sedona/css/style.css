@@ -63,9 +63,8 @@ main {
 }
 .main-header-logo {
     position: absolute;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    left: 606px;
+    left: 46%;
+    margin: 0 auto;
     width: 138px;
 }
 .site-navigation {
@@ -78,6 +77,10 @@ main {
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.site-navigation a, 
+.user-navigation a {
+    padding: 23px 0px 19px 0;
 }
 .site-navigation li:nth-child(2) {
     margin-right: 140px;

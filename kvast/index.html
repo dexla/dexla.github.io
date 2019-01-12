@@ -6,73 +6,98 @@
     <title>Kvast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     </head>
   <body>
-     <div class="page-header">
-       <div class="container">
-         <div class="gri">
-         <div class="header-logo"><img src="img/logo.png" alt="квас">
+      <div class="page-header">
+        <section class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slides-controls">
+                <label class="slide-radio" for="btn-1"></label>
+                <label class="slide-radio" for="btn-2"></label>
+                <label class="slide-radio" for="btn-3"></label> 
+            </div>
+                 <ul class="slider-list">
+                    <li class="slider-item">
+                        
+                    </li>
+                    <li class="slider-item">
+                        
+                      </li>
+                    <li class="slider-item">
+                        
+                    </li>
+                 </ul>
+            </section>
+            <div class="container">
+            <div class="logos">
+                <div class="gri">
+                    <div class="header-logo"><img src="img/logo.png" alt="квас">
+                    </div>
+                    <ul class="lin">
+                       <li><a href="#">История</a></li>
+                       <li><a href="#">Производство</a></li>
+                       <li><a href="#">Ассортимент</a></li>
+                       <li><a href="#">Где купить</a></li>
+                    </ul>  
+                </div> 
+                <div class="promo">
+                    <p>Крафтовый квас<br>всему голова!</p>
+                </div>
+              </div>
           </div>
-         <div class="lin"><a href="#">История</a>
-          <a href="#">Производство</a>
-          <a href="#">Ассортимент</a>
-          <a href="#">Где купить</a>
-         </div>  
-       </div> 
-       <div class="promo">
-          <p>Крафтовый квас<br>
-            всему голова!</p>
+      </div>
+      <div class="fotos-price">
+          <div class="container">
+              <div class="beer-and-price">
+                  <h2 class="section-title news">Новинки</h2>
+                  <div class="beer1">  
+                      <h3 class="vaht">Вахтёр</h3>
+                      <table class="taba">
+                            <tr>
+                                <td>Алк.</td> <td>&lt; 1%</td> 
+                            </tr>
+                            <tr> 
+                                <td>Ккал:</td> <td>35</td>
+                            </tr>
+                      </table>
+                      <p class="sostav">Ржаной хлеб, Вода, <br> Солод, Соль</p>
+                      <img src="img/bottle-left.jpg" alt="Вахтер" class="im1">
+                      <p class="reklama">Терпкий и мощный, вкус этого кваса 
+                            взбодрит после тяжёлого дня и придаст
+                            сил для вечерних приключений!</p>
+                      <div class="pric1">
+                          <a class="btn" href="#">Подробнее</a>
+                          <a class="btn-buy" href="#">Купить</a>
+                          <b class="cena">150 Р.</b>
+                      </div>
+                  </div>
+                  <div class="beer2"> 
+                      <h3 class="roma">Романтик</h3>
+                      <table class="taba2">
+                          <tr>
+                              <td>Алк.</td> 
+                              <td>&lt; 0,5%</td> 
+                          </tr>
+                          <tr>
+                              <td>Ккал:</td> 
+                              <td>27</td>
+                          </tr>
+                    </table>
+                    <p class="sostav2">Ячменный хлеб, Вода,<br> Солод, Апельсин</p>
+                    <img src="img/bottle-right.jpg" alt="Романтик" class="im2">
+                    <p class="reklama2">Лёгкий и освежающий напиток поможет 
+                      сохранять отличное настроение в течение всего дня.</p>
+                    <div class="pric2">
+                        <a class="btn" href="#">Подробнее</a>
+                        <a class="btn-buy" href="#">Купить</a>
+                        <b class="cena">90 Р.</b>
+                    </div>
+                  </div>
+              </div>
          </div>
-      </div>
-     </div>
-     <div class="fotos-price">
-      <div class="container">
-        <div class="beer-and-price">
-        <h2 class="section-title news">Новинки</h2>
-        <div class="beer1">  
-        <h3 class="vaht">Вахтёр</h3>
-            <table class="taba">
-              <tr>
-              <td>Алк.</td> <td>&lt; 1%</td> 
-              </tr>
-              <tr> <td>Ккал:</td> <td>35</td>
-               </tr>
-            </table>
-            <p class="sostav">Ржаной хлеб, Вода, <br> Солод, Соль</p>
-            <img src="img/bottle-left.jpg" alt="Вахтер" class="im1">
-            <p class="reklama">Терпкий и мощный, вкус этого кваса 
-              взбодрит после тяжёлого дня и придаст
-               сил для вечерних приключений!</p>
-            <div class="pric1">
-            <a class="btn" href="#">Подробнее</a>
-            <a class="btn-buy" href="#">Купить</a>
-            <b class="cena">150 Р.</b></div>
-          </div>
-            <div class="beer2"> 
-            <h3 class="roma">Романтик</h3>
-           <table class="taba2">
-            <tr>
-              <td>Алк.</td> 
-              <td>&lt; 0,5%</td> 
-            </tr>
-            <tr>
-              <td>Ккал:</td> 
-              <td>27</td>
-            </tr>
-          </table>
-          <p class="sostav2">Ячменный хлеб, Вода,<br> Солод, Апельсин</p>
-          <img src="img/bottle-right.jpg" alt="Романтик" class="im2">
-          <p class="reklama2">Лёгкий и освежающий напиток поможет 
-            сохранять отличное настроение в течение всего дня.</p>
-          <div class="pric2">
-          <a class="btn" href="#">Подробнее</a>
-          <a class="btn-buy" href="#">Купить</a>
-          <b class="cena">90 Р.</b>
-          </div>
-        </div>
-        </div>
-      </div>
     </div>
     <div class="features">
      <div class="container">
