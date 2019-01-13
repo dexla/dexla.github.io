@@ -1,0 +1,54 @@
+#slider {
+    width: 384px;
+    height: 128px;
+    border: 5px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.slider-common {
+    position: relative;
+}
+#polosa {
+    width: 3840px;
+    position: relative;
+    transition: all ease 1s;
+    left: 0;
+    right: 0;
+}
+#polosa img {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#slider-left {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 600px;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: gray;
+    color: #fff;
+    width: 50px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+#slider-right {
+    position: absolute;
+    display: block;
+    top: 140px;
+    left: 700px;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: gray;
+    color: #fff;
+    width: 50px;
+    border-radius: 5px;
+    margin: 20px 0;
+}

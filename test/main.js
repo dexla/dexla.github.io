@@ -141,3 +141,26 @@ function pop1() {
 };
 
 //Пример 8
+document.getElementById("slider-left").onclick = sliderleft;
+
+var left = 0;
+var polosa = document.getElementById("polosa");
+
+function sliderleft() {
+    left = left - 128;
+    if (left < -3456) {
+        left = 0;
+    }
+    polosa.style.left = left +'px';
+}
+
+
+document.getElementById("slider-right").onclick = sliderright;
+var polosa = document.getElementById("polosa");
+function sliderright() {
+    left = left + 128;
+    if (left > 0) {
+        left = -3456;
+    }
+    polosa.style.left = left +'px';
+}
