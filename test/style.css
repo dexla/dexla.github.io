@@ -1,12 +1,17 @@
 #slider {
     width: 384px;
     height: 128px;
-    border: 5px solid black;
-    margin: 0 auto;
+    border: 5px solid #c2c2c2;
+    border-radius: 5px;
+    margin: 0 auto 80px auto;
     overflow: hidden;
-    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.slider-common {
+#slider:hover {
+    border: 5px solid #ff0000;
+    transition: all ease .5s;
+}
+.exemple-8 {
     position: relative;
 }
 #polosa {
@@ -32,12 +37,17 @@
     top: 140px;
     left: 600px;
     padding: 10px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     background-color: gray;
+    border: none;
     color: #fff;
     width: 50px;
     border-radius: 5px;
     margin: 20px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#slider-left:hover {
+    background-color: rgb(102, 102, 102);
 }
 #slider-right {
     position: absolute;
@@ -45,10 +55,49 @@
     top: 140px;
     left: 700px;
     padding: 10px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     background-color: gray;
+    border: none;
     color: #fff;
     width: 50px;
     border-radius: 5px;
     margin: 20px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#slider-right:hover {
+    background-color: rgb(102, 102, 102);
+}
+h4 {
+    display: inline-block;
+    padding: 0 30px;
+    margin: 10px 0;
+    border-right: 2px solid #c2c2c2;
+}
+h4:last-child {
+    border-right: none;
+}
+#test {
+    width: 150px;
+    height: 150px;
+    background: orange;
+    margin: 30px;
+}
+#out9 {
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 3px;
+}
+#test2 {
+    width: 150px;
+    height: 150px;
+    background: #ff0000; 
+    /* border: 1px solid #000000;  */
+    /* border-radius: 50%; */
+}
+#out10 {
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 3px;
 }
