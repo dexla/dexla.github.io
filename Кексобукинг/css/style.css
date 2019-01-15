@@ -1,3 +1,6 @@
+body * {
+  outline: 1px solid red;
+}
 body {
   background-color: #f0f0ea;
   margin: 0 auto;
@@ -115,7 +118,7 @@ textarea:focus {
 }
 
 .features input:checked + label {
-  background-color: #ff6547;
+  /* background-color: #ff6547; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
 }
 
