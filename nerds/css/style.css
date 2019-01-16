@@ -61,6 +61,9 @@ main {
     text-transform: uppercase;
     padding-top: 50px;
 }
+.main-header a:not([href]) {
+    opacity: 1;
+}
 .main-header-logo:hover,
 .main-header-logo:focus {
     opacity: .6;
@@ -74,6 +77,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .site-navigation li {
     margin-right: 45px;
 }

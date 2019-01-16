@@ -342,3 +342,37 @@ document.getElementById('out13').onclick = function() {
     sum(15, 13);
 };
 // document.getElementById('out13').onclick = sum(15, 13);
+
+//Пример 16----------------------------------------------
+var block = document.getElementById("block");
+block.onclick = function() {
+    this.style.background = 'red';
+    // this.onclick = null;
+};
+block.ondblclick = function() {
+    this.style.background = 'green';
+};
+block.oncontextmenu = function() {
+    this.style.borderRadius = '50%';
+    return false;
+}
+block.onmouseenter = function() {
+    this.style.background = 'gold';
+    console.log('A-A-a-a-a-a-a');
+};
+block.onmouseleave = function() {
+    this.style.background = 'orange';
+};
+var a=0;
+block.onmousemove = function() {
+    a++;
+    this.style.width = 100 + a + 'px';
+}
+block.onmousedown = function(event) {
+    this.style.background = 'cyan';
+    console.log(event.button);
+    console.log(event.which);
+}
+block.onmouseup = function(event) {
+    this.style.background = 'blue';
+}
