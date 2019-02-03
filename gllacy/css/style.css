@@ -1,5 +1,5 @@
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
 }
@@ -66,7 +66,7 @@ body > input[type="radio"] {
 .slider-item {
     display: flex;
     position: absolute;
-    bottom: 55px;
+    bottom: 35px;
     left: 230px;
     overflow: hidden;
     color: white;
@@ -98,22 +98,30 @@ body > input[type="radio"] {
 .slider-info h2 {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
+}
+.give_both {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 11px 0px 10px 0;
+    text-shadow: 0px 2px 10px rgba(49, 20, 20, 0.603);
+    box-shadow: 0 2px 2px 0 rgba(119, 12, 12, 0.541);
 }
 .slides-controls {
     position: absolute;
-    bottom: 102px;
+    bottom: 65px;
     left: 0px;
-    width: 85px;
+    width: 90px;
     height: 20px;
     display: flex;
     justify-content: start;
-    /* z-index: 1000; */
 }
 .slide-radio {
     width: 17px;
     height: 17px;
-    margin-right: 8px;
+    margin-right: 9px;
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 50%;
@@ -222,6 +230,7 @@ body > input[type="radio"] {
     justify-content: space-between;
     align-items: center;
     width: 1146px;
+    margin-bottom: 40px;
 }
 .offertas {
     width: 524px;
@@ -236,6 +245,7 @@ body > input[type="radio"] {
 }
 .offertas p {
     font-weight: 600;
+    font-size: 18px;
 }
 .offertas {
     background: url(../img/malinPhone.png) 0px 0px no-repeat;
@@ -252,7 +262,72 @@ body > input[type="radio"] {
     text-align: center;
     margin-top: 35px;
     width: 170px;
-    box-shadow: 0 2px 0px 0px #ff110077;
+    /* box-shadow: 0 2px 0px 0px #ff110077; */
+    box-shadow: 0 2px 2px 0 rgba(156, 10, 10, 0.829);
+}
+.hits {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 1146px;
+    margin-bottom: 35px;
+}
+.orange {
+    background: url(../img/iceOrange.png) 0 0 no-repeat;
+}
+.coffe {
+    background: url(../img/iceChocolate.png) 0 0 no-repeat;
+}
+.strawberry {
+    background: url(../img/iceStrawberry.png) 0 0 no-repeat;
+}
+.brulee {
+    background: url(../img/iceCaramell.png) 0 0 no-repeat;
+    
+}
+.hits ul {
+    height: 325px;
+    width: 267px;
+}
+.price-hits {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px rgb(119, 119, 119);
+    margin-bottom: 25px;
+    margin-top: 210px;
+}
+.hits span {
+    font-size: 30px;
+    line-height: 45px;
+    
+}
+.text-hits {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+.features {
+    background: url(../img/wafer.jpg) 0 0 no-repeat;
+    padding: 20px;
+    border-radius: 15px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feature-item {
+    width: 480px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+}
+.features-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+
 }
 
 
