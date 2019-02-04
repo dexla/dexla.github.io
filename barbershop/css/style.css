@@ -1060,6 +1060,6 @@ input[type="radio"].visually-hidden {
     animation-duration: .6s;
 }
 
-/* body * {
+body * {
     outline: 1px solid red;
-} */
+}

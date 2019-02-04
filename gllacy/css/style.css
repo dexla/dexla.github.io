@@ -401,7 +401,7 @@ body > input[type="radio"] {
 }
 .map {
     width: 100%;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 30px auto;
     min-height: 430px;
     position: relative;
     bottom: 0;
@@ -458,7 +458,35 @@ body > input[type="radio"] {
 .contact-info .address {
     margin-bottom: 15px;
 }
-
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer-social ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 187px;
+    margin: 0 auto;
+    padding: 0;
+}
+.main-footer .container a {
+    color: #fff;
+    display: flex;
+}
+.footer-nav {
+    width: 356px;
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-nav ul li {
+    width: 178px;
+}
 
 
 
