@@ -1,5 +1,5 @@
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -146,7 +146,10 @@ body > input[type="radio"] {
 }
 .site-navigation a {
     color: white;
-    padding: 22px 0;
+    border-bottom: 1px solid #ffffff3d;
+}
+.site-navigation .main-header-logo {
+    border-bottom: none;
 }
 .site-navigation .main-header-logo {
     display: flex;
@@ -160,13 +163,25 @@ body > input[type="radio"] {
     width: 560px;
     font-size: 16px;
     line-height: 18px;
+    font-weight: bold;
 }
 .site-navigation li {
     margin-right: 30px;
 }
+.search {
+    position: relative;
+    padding: 12px 8px 8px 8px;
+}
+.user-navigation a:hover path {
+    fill: #000000;
+}
 .user-navigation a {
     color: white;
+}  
+.sing_in,
+.trash {
     padding: 8px 0px;
+    text-align: center;
 }
 .user-navigation {
     display: flex;
@@ -202,25 +217,25 @@ body > input[type="radio"] {
     padding: 8px 0;
 }
 
-
 .user-navigation li:nth-child(1) {
-    width: 33px;
+    width: 37px;
+    height: 20px;
     text-align: center;
     border-radius: 50px;
     background: #a0b5a9;
-    padding: 6px 0;
-
+    padding: 8px 0 8px 0;
 }
-
+.user-navigation li:nth-child(1):hover {
+    background: #ffffffd2;
+}
 .user-navigation .schedule {
     width: 267px;
-    /* height: 30px; */
     text-align: end;
     justify-content: center;
     margin-right: 0;
     font-weight: 500;
 }
-.schedule .telefon {
+.schedule .telephon {
     font-size: 24px;
     line-height: 26px;
     margin-top: 5px;   
@@ -271,6 +286,10 @@ body > input[type="radio"] {
     justify-content: space-between;
     width: 1146px;
     margin-bottom: 35px;
+}
+.hits a {
+    color: #fff;
+    border-bottom: 1px solid #ffffff3d;
 }
 .orange {
     background: url(../img/iceOrange.png) 0 0 no-repeat;
@@ -401,7 +420,7 @@ body > input[type="radio"] {
 }
 .map {
     width: 100%;
-    margin: 40px auto 30px auto;
+    margin: 40px auto;
     min-height: 430px;
     position: relative;
     bottom: 0;
@@ -458,25 +477,38 @@ body > input[type="radio"] {
 .contact-info .address {
     margin-bottom: 15px;
 }
+.main-footer {
+    margin-bottom: 30px;
+}
 .main-footer .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
 }
 .footer-social ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 187px;
+    width: 186px;
     margin: 0 auto;
     padding: 0;
 }
-.main-footer .container a {
-    color: #fff;
+.footer-social a path {
+    fill: #ffffffcc;
+}
+.social-button {
     display: flex;
+    border: 3px solid #ffffff7a;
+    border-radius: 50%;
+}
+.main-footer a {
+    color: #fff;
 }
 .footer-nav {
-    width: 356px;
+    width: 300px;
+    font-size: 13px;
+    line-height: 18px;
 }
 .footer-nav ul {
     display: flex;
@@ -484,11 +516,29 @@ body > input[type="radio"] {
     flex-wrap: wrap;
     align-items: center;
 }
-.footer-nav ul li {
-    width: 178px;
+.footer-nav li {
+    width: 150px;
+    margin-bottom: 5px;
 }
-
-
+.footer-nav a {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ffffff3d;
+}
+.footer-nav li:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+.footer-copyright {
+    width: 190px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.footer-copyright a path {
+    fill: #ffffff;
+}
+.footer-link {
+    border-bottom: 1px solid #ffffff3d;
+}
 
 
 
