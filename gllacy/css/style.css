@@ -42,7 +42,6 @@ main {
 .container {
     width: 1146px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 .button {
     display: inline-block;
@@ -51,7 +50,7 @@ main {
     text-align: center;
     color: white;
     vertical-align: middle;
-    background: #ec583c;
+    background: linear-gradient(to bottom, #f85032 0%,#f16f5c 21%,#f6290c 51%,#f02f17 87%,#e73827 100%);
     border-radius: 50px;
     width: 240px;
     font-size: 16px;
@@ -161,7 +160,6 @@ body > input[type="radio"] {
     background: transparent;
     border-radius: 25px;
     padding: 8px 0px;
-    /* border-bottom: 1px solid #0000003d; */
 }
 .catalog-item::after {
     content: "";
@@ -187,7 +185,6 @@ body > input[type="radio"] {
 }
 .site-navigation .catalog-item:hover a {
     color: #000000;
-    border-bottom: none;
 }
 .catalog-list {
     position: absolute;
@@ -224,25 +221,7 @@ body > input[type="radio"] {
     top: 38px;
     left: -11px;
 }
-.search {
-    display: block;
-    position: relative;
-    padding: 10px 6px 5px 6px;
-}
-.user-navigation a:hover path {
-    fill: #000000;
-}
-.user-navigation a {
-    color: white;
-}  
-.sing_in,
-.trash {
-    padding: 8px 0px;
-    text-align: center;
-}
-.sing_in {
-    padding-left: 15px;
-}
+/* ----------------------------------- */
 .user-navigation {
     display: flex;
     align-items: center;
@@ -254,19 +233,15 @@ body > input[type="radio"] {
     justify-content: space-between;
 }
 .user-navigation li {
-    margin-right: 10px;
-    margin-top: 23px;
-    align-items: center;
+    margin-top: 21px;
 }
-.user-navigation li:nth-child(3) {
-    width: 117px;
+.user-navigation li:nth-child(1) {
+    display: flex;
+    width: 37px;
+    height: 38px;
     text-align: center;
-    vertical-align: middle;
-    margin-right: 0;
-    border-radius: 50px;
+    border-radius: 50%;
     background: #a0b5a9;
-    padding: 9px 0;
-    
 }
 .user-navigation li:nth-child(2) {
     width: 92px;
@@ -274,19 +249,33 @@ body > input[type="radio"] {
     vertical-align: middle;
     border-radius: 50px;
     background: #a0b5a9;
-    padding: 9px 0;
 }
-
-.user-navigation li:nth-child(1) {
-    width: 35px;
-    height: 15px;
+.user-navigation li:nth-child(3) {
+    width: 117px;
     text-align: center;
+    vertical-align: middle;
     border-radius: 50px;
     background: #a0b5a9;
-    padding: 0px 0 20px 0;
 }
-.user-navigation li:nth-child(1):hover {
+.user-navigation li:nth-child(1):hover,
+.user-navigation li:nth-child(2):hover,
+.user-navigation li:nth-child(3):hover {
     background: #ffffffd2;
+    color: #000000;
+}
+.user-navigation a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.user-navigation a:hover path,
+.user-navigation a:hover circle {
+    fill: #000000;
+} 
+.user-navigation a:hover {
+    color: #000000;
 }
 .user-navigation .schedule {
     width: 267px;
@@ -294,12 +283,14 @@ body > input[type="radio"] {
     justify-content: center;
     margin-right: 0;
     font-weight: 500;
+    margin-top: 20px;
 }
-.schedule .telephon {
+.schedule .telephone {
     font-size: 24px;
     line-height: 26px;
     margin-top: 5px;   
 }
+/* -------------------------------- */
 .offers {
     display: flex;
     justify-content: space-between;
@@ -337,8 +328,8 @@ body > input[type="radio"] {
     text-align: center;
     margin-top: 35px;
     width: 170px;
-    /* box-shadow: 0 2px 0px 0px #ff110077; */
-    box-shadow: 0 2px 2px 0 rgba(156, 10, 10, 0.829);
+   box-shadow: 0 2px 2px 0 rgba(156, 10, 10, 0.829);
+   text-shadow: 0px 2px 10px rgba(49, 20, 20, 0.603);
 }
 .hits {
     color: #fff;
@@ -473,6 +464,7 @@ body > input[type="radio"] {
     border: none;
     font-weight: bold;
     box-shadow: 0 2px 2px 0 rgba(119, 12, 12, 0.541);
+    text-shadow: 0px 2px 10px rgba(49, 20, 20, 0.603);
 }
 .index-columns {
     display: flex;
@@ -525,6 +517,7 @@ body > input[type="radio"] {
     font-weight: bold;
     width: 250px;
     box-shadow: 0 2px 2px 0 rgba(119, 12, 12, 0.541);
+    text-shadow: 0px 2px 10px rgba(49, 20, 20, 0.603);
     margin-top: 15px;
 }
 .address,
