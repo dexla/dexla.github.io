@@ -64,7 +64,8 @@ main {
     position: relative;
 }
 body > input[type="radio"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 .slider-item {
     display: flex;
@@ -638,9 +639,16 @@ iframe {
 .footer-social a path {
     fill: #ffffffcc;
 }
+.footer-social a:hover path,
+.footer-social a:focus path {
+    fill: #ffffff;
+}
+.footer-social a:active path {
+    fill: #ffffff86;
+}
 .social-button {
     display: flex;
-    border: 3px solid #ffffff7a;
+    border: 3px solid #ffffff7e;
     border-radius: 50%;
 }
 .main-footer a {
