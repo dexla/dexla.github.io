@@ -409,9 +409,6 @@ main {
     padding: 0;
     margin-bottom: 17px;
 }
-.breadcrumbs-current { 
-    color: #aba9a7;
-}
 .breadcrumbs {
     list-style: none;
     line-height: 20px;
@@ -420,6 +417,9 @@ main {
     padding: 0;
     margin-bottom: 55px;
     flex-wrap: wrap;
+}
+.breadcrumbs-current { 
+    color: #aba9a7;
 }
 .breadcrumbs a {
     color: #000000;
@@ -1061,5 +1061,5 @@ input[type="radio"].visually-hidden {
 }
 
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
