@@ -66,6 +66,81 @@
                         <li class="breadcrumbs-current">Creamy</li>
                 </ul>
                 <h1 class="">Ice creamy</h1>
+                <section class="filtres">
+                        <h2 class="visually-hidden">Filter Ices</h2>
+                        <form action="#" class="filter" method="GET" id="filtr">
+                        <fieldset class="sorting-filter">
+                            <legend>Sorting:</legend>
+                                <select name="sorted" id="">
+                                        <option value="relevance">por relevance</option>
+                                        <option value="price">por price</option>
+                                </select>
+                        </fieldset>
+                        <fieldset class="range-filter">
+                            <legend>Price:</legend>
+                                <ul class="price-controls">
+                                    <li>
+                                        <input type="text" class="price-min" name="min-price" placeholder="1€"><span>-</span>
+                                        <input type="text" class="price-max" name="max-price" placeholder="112€">
+                                    </li>
+                                </ul>  
+                                <ul class="range-controls">
+                                    <li class="scale">
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li class="toggle min-toggle"></li>
+                                    <li class="toggle max-toggle"></li>
+                                </ul>
+                        </fieldset>
+                        <fieldset class="fat-filter">
+                            <legend>Fat:</legend>
+                                <ul class="form-list">
+                                    <li class="form-option">
+                                        <input class="visually-hidden form-input" id="defatted" type="radio" name="setka" value="">
+                                        <label for="defatted">0%</label>
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden form-input" id="low-fat" type="radio" name="setka" value="" checked>
+                                        <label for="low-fat">to 10%</label>
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden form-input" id="medium-fat" type="radio" name="setka" value="">  
+                                        <label for="medium-fat">to 30%</label>
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden form-input" id="fat" type="radio" name="setka" value="">  
+                                        <label for="fat">above 30%</label>
+                                    </li>
+                                </ul>
+                        </fieldset>
+                        <fieldset class="infro-filter">
+                                <legend>Topping:</legend>
+                                <ul class="form-list">
+                                    <li class="form-option">
+                                        <input class="visually-hidden" type="checkbox" id="swim" checked>
+                                        <label for="swim">chocolate</label>             
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden" type="checkbox" id="park">
+                                        <label for="park">sugar topping</label> 
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden" type="checkbox" id="wifi">
+                                        <label for="wifi">fruts</label> 
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden" type="checkbox" id="motel" checked>
+                                        <label for="motel">syrup</label> 
+                                    </li>
+                                    <li class="form-option">
+                                        <input class="visually-hidden" type="checkbox" id="appart" checked>
+                                        <label for="appart">jam</label> 
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        <button type="submit" class="button-show" form="filtr">Show</button>
+                    </form>
+                </section>
                 <section class="hits">
                     <h2 class="visually-hidden">Hits</h2>
                     <ul class="orange">

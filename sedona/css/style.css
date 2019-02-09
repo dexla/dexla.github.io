@@ -301,10 +301,7 @@ main {
 .filtres input[type="checkbox"]:disabled + label::after {
    opacity: .3;
 }
-.filtres input[type="checkbox"]:focus + label::before,
-.filtres input[type="checkbox"]:focus + label::after {
-    outline: 2px solid #5496bd;
-}
+
 .filter {
     display: flex;
     width: 1056px;
@@ -503,6 +500,13 @@ main {
     margin-bottom: 7px;
     font-size: 21px;
     line-height: 26px;
+}
+.hotel-title a:hover,
+.hotel-title a:focus {
+    color: #81b3d2;
+}
+.hotel-title a:active {
+    color: #928a85;
 }
 .price-hotel {
     margin-right: 410px;

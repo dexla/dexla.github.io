@@ -523,7 +523,7 @@ main {
     position: absolute;
     width: 16px;
     height: 16px;
-    border: 2px solod #000000;
+    border: 2px solid #000000;
     border-radius: 50%;
     top: -1px;
     left: -43px;
@@ -1061,5 +1061,5 @@ input[type="radio"].visually-hidden {
 }
 
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
