@@ -71,10 +71,15 @@
                         <form action="#" class="filter" method="GET" id="filtr">
                         <fieldset class="sorting-filter">
                             <legend>Sorting:</legend>
+                            <div class="sort-select">
                                 <select name="sorted" id="">
-                                        <option value="relevance">por relevance</option>
-                                        <option value="price">por price</option>
+                                        <option value="relevance">relevance</option>
+                                        <option value="price">first expensive</option>
+                                        <option value="relevance">first cheap</option>
+                                        <option value="price">by fat</option>
                                 </select>
+                                <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 9 1"><path fill="#FFF" d="M4.5 5L0 0h9z"/></svg>
+                            </div>
                         </fieldset>
                         <fieldset class="range-filter">
                             <legend>Price:</legend>
