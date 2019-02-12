@@ -489,7 +489,7 @@ body > input[type="radio"] {
     line-height: 16px;
     border-radius: 5px;
     box-shadow:  0 15px 20px -1px rgba(0, 0, 0, 0.455);
-    padding: 20px;
+    padding: 20px 15px;
     top: 38px;
     right: 0px;
     display: none;
@@ -503,12 +503,9 @@ body > input[type="radio"] {
     display: flex;
     align-items: center;
     margin-right: 15px;
-    margin-bottom: 15px;
-    
+    margin-bottom: 20px;
 }
-
 .trash-form .card-item:first-child  {
-    
     border: none;
 }   
 .card-item a {
@@ -517,6 +514,7 @@ body > input[type="radio"] {
     align-items: center;
     margin-right: 20px;
     vertical-align: middle;
+    margin-left: 30px;
 }
 .card-item a img {
     display: inline-block;
@@ -533,6 +531,8 @@ body > input[type="radio"] {
 }
 .price-form {
     text-align: end;
+    border-top: 1px solid #9cb0a4;
+    padding-top: 15px;
     margin: 15px 0;
     font-size: 15px;
     line-height: 18px;
@@ -556,6 +556,40 @@ body > input[type="radio"] {
     box-shadow: none;
     position: relative;
     top: 2px;
+}
+.modal-close {
+    position: absolute;
+    background-color: transparent;
+    width: 19px;
+    height: 19px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.modal-close::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 15px;
+    height: 1px;
+    border-radius: 3px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    /* opacity: .5; */
+}
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 15px;
+    height: 1px;
+    border-radius: 3px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+    /* opacity: .5; */
 }
 
 
