@@ -289,6 +289,7 @@ body > input[type="radio"] {
     line-height: 16px;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 100;
 }
 .user-navigation li {
     margin-top: 24px;
@@ -299,6 +300,10 @@ body > input[type="radio"] {
 .user-navigation li a:focus circle {
     fill: #000000;
 } 
+.inner-page .trash:hover a path:first-child,
+.inner-page .trash a:focus path:first-child {
+    fill: red;
+}
 .sing_in:hover > a,
 .search:hover > a,
 .trash:hover > a,
@@ -484,6 +489,7 @@ body > input[type="radio"] {
 .trash-form {
     position: absolute;
     width: 500px;
+    min-height: auto;
     background: #f8f7f4;
     font-size: 13px;
     line-height: 16px;
@@ -557,7 +563,7 @@ body > input[type="radio"] {
     position: relative;
     top: 2px;
 }
-.modal-close {
+.modal-close-form {
     position: absolute;
     background-color: transparent;
     width: 19px;
@@ -567,7 +573,7 @@ body > input[type="radio"] {
     cursor: pointer;
     outline: none;
 }
-.modal-close::before {
+.modal-close-form::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -577,9 +583,9 @@ body > input[type="radio"] {
     border-radius: 3px;
     background-color: #000000;
     transform: rotate(45deg);
-    /* opacity: .5; */
+    opacity: .5;
 }
-.modal-close::after {
+.modal-close-form::after {
     content: "";
     position: absolute;
     top: 9px;
@@ -589,9 +595,18 @@ body > input[type="radio"] {
     border-radius: 3px;
     background-color: #000000;
     transform: rotate(-45deg);
-    /* opacity: .5; */
+    opacity: .5;
 }
-
+.modal-close-form:hover::before,
+.modal-close-form:hover::after,
+.modal-close-form:focus::before,
+.modal-close-form:focus::after {
+    opacity: 1;
+}
+.modal-close-form:active::before,
+.modal-close-form:active::after {
+    opacity: .2;
+}
 
 
 .user-navigation .schedule {
@@ -1070,19 +1085,19 @@ body > input[type="radio"] {
 }
 .map img {
     display: block;
-	position: absolute;
-	/* z-index: -1; */
+    position: absolute;
+    z-index: -1;
     top: 0;
     right: 0;
     left: 0;
     width: 1440px;
     height: 430px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 .map iframe {
 	border: 0;
-	width: 100%;
+    width: 100%;
 }
 .contact-info {
     display: flex;
@@ -1127,9 +1142,6 @@ body > input[type="radio"] {
 }
 .contact-info .address {
     margin-bottom: 15px;
-}
-iframe {
-    width: 100%;
 }
 /* ------------------------------ */
 
@@ -1516,8 +1528,181 @@ select:hover + .icon-down path{
 
 
 
+.modal {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 15px 20px -1px rgba(0, 0, 0, 0.455);
+    border-radius: 10px;
+    display: none;
+}
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: .6s;
+}
+.modal-write {
+    bottom: 120px;
+    width: 430px;
+    padding: 20px 25px 25px 25px;
+    margin-left: 360px;
+    z-index: 10;
+}
 
+.modal h2 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.login-form .button {
+    position: relative;
+    left: 293px;
+    width: 137px;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(119, 12, 12, 0.541);
+    cursor: pointer;
+}
+.login-form .button:active {
+    background: linear-gradient(to bottom, #ff0c0c 0%,#ff5151 100%);
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+}
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.login-form input {
+    width: 245px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #9cb0a4;
+    padding: 0 10px;
+    background-color: transparent;
+    outline: none;
+}
+.login-form input:hover,
+.login-form input:focus {
+    border: 2px solid #9cb0a4;
+    width: 245px;
+    height: 40px;
+    padding: 0 9px;
+}
+.login-form input::-webkit-input-placeholder {
+    color:#aaaaaa;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+.login-form input:focus::-webkit-input-placeholder {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+.login-passwors-info {
+    margin-top: 20px;
+}
+.login-passwors-info label {
+    display: block;
+}
+.login-passwors-text textarea {
+    width: 426px;
+    box-sizing: border-box;
+    height: 117px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9cb0a4;
+    background-color: transparent;
+    margin: 20px 0;
+}
+.login-passwors-text textarea:hover,
+.login-passwors-text textarea:focus {
+    padding: 9px;
+    border: 2px solid #9cb0a4;
+    outline: none;
+}
+.login-form textarea::-webkit-input-placeholder {
+    color:#aaaaaa;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+.login-form textarea:focus::-webkit-input-placeholder {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+.modal-close {
+    position: absolute;
+    background-color: transparent;
+    bottom: 360px;
+    left: 400px;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.modal-close::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    opacity: .5;
+}
+.modal-close::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+    opacity: .5;
+}
 
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+    opacity: 1;
+}
+.modal-close:active::before,
+.modal-close:active::after {
+    opacity: .2;
+}
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: .6s;
+}
+.modal-error {
+    animation-name: shake;
+    animation-duration: .6s;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0)}
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px)}
+    20%, 40%, 60%, 80% { transform: translateX(10px)}
+}
+@keyframes bounce {
+    0% { transform: translateY(-3000px)}
+    70% { transform: translateY(30px)}
+    90% { transform: translateY(-10px)}
+    100% { transform: translateY(0px)}
+}
 
 
 

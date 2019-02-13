@@ -7,6 +7,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="main.js" defer></script>
     <link rel="shortcut icon" href="./conev_ice_food_20624.ico" type="image/x-icon">
 
 </head>
@@ -76,20 +77,8 @@
                         <li class="trash">
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" opacity="0" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#fff" cx="6.984" cy="18" r="2"/><circle fill="#fff" cx="15.984" cy="18" r="2"/><path fill="#fff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>Empty</a>
                             <div class="trash-form">  
-                                <p class="card-item">
-                                    <button type="button" class="modal-close">delete</button>
-                                    <a href="#"><img src="img/iceOrange.png" width="32" height="32" alt="ice cream orange">Creamy with orange jam and citrus chips</a>
-                                    <span>1,5kg x 4€</span>
-                                    <span class="price-netto">6€</span>
-                                </p>
-                                <p class="card-item">
-                                    <button type="button" class="modal-close">delete</button>
-                                    <a href="#"><img src="img/iceStrawberry.png" width="32" height="32" alt="ice cream cowberry">Creamy-strawberry with white chocolate powder</a>
-                                    <span>1,5kg x 5€</span>
-                                    <span class="price-netto">7,5€</span>
-                                </p>
-                                <p class="price-form">Price: 13,5€</p>
-                                <button class="button button-card" type="submit">make an order</button>
+                                <p class="price-form"></p>
+                                <button class="button button-card" type="submit">Make an order</button>
                             </div>  
                         </li>
                         <li class="schedule">
@@ -176,6 +165,7 @@
                         <li class="feature-item">Ingredients are procured only from proven farms and companies with which we have long-term cooperation.</li>
                         <li class="feature-item">For the preparation of ice cream using real cream and milk of the highest quality. All additional ingredients and additives are made from natural, environmentally friendly raw materials.</li>
                         <li class="feature-item">Delivery of our ice cream to customers is carried out in a special thermopack, which does not allow the ice cream to melt on the way and allows you to keep excellent taste.</li>
+                    </ul>
                 </section>
                 <div class="index-columns">
                     <section class="news">
@@ -187,7 +177,7 @@
                         <div class="subby">
                             <p>Subscribe to our sweet newsletter and you will always be aware of all the very tasty things that are happening here. We promise not to spam and not to send unnecessary nonsense. Honestly =)</p>
                             <form action="#" method="POST">
-                                    <label for=""></label>
+                                    <label for="email"></label>
                                     <input type="email" name="email" id="email" placeholder="E-mail">
                                     <button class="button" type="submit">To send</button>
                             </form>
@@ -208,8 +198,8 @@
                                 <p><a class="button contact-button" href="#">Feedback form</a></p>
                             </div>
                         </div> 
-                            <iframe src="https://yandex.ru/map-widget/v1/-/CBFh4QaroB" width="1200" height="430"></iframe>
-                        <!-- <img src="img/map.png" width="1440" height="430" alt="адрес на карте"> -->
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CBFh4QaroB" width="1200" height="416"></iframe>
+                        <img src="img/map.png" width="1440" height="430" alt="adress">
                 </section>
             </main>
             <footer class="main-footer">
@@ -241,6 +231,25 @@
                     </div>
                 </div>
             </footer>
+            <section class="modal modal-write">
+                    <h2>We will answer you!</h2>
+                    <form class="login-form" method="POST" action="#">
+                        <p class="login-passwors-info">
+                            <label class="visually-hidden" for="name">Your name:</label>
+                            <input type="text" name="name" id="name" placeholder="What's your name?">
+                        </p>
+                        <p class="login-passwors-info">
+                            <label class="visually-hidden" for="e-mail">Your e-mail:</label>
+                            <input type="email" name="e-mail" id="e-mail" placeholder="Your mail for reply?">
+                        </p>
+                        <p class="login-passwors-text">
+                            <label class="visually-hidden" for="letter">Write something:</label>
+                            <textarea name="letter" id="letter" rows="10" cols="96" placeholder="Write something"></textarea>
+                        </p>
+                        <button class="button" type="submit">To send</button>
+                    </form>
+                    <button type="button" class="modal-close">Close</button>
+                </section>
         </div>
     </div>
 </body>
