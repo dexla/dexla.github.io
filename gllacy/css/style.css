@@ -370,11 +370,9 @@ body > input[type="radio"] {
     width: 92px;
     border-radius: 50px;
     position: relative;
-    border-bottom: 5px solid transparent;
-    margin-bottom: -5px;
-}
-.sing_in:hover .sing-form {
-    display: block;
+    border-bottom: 6px solid transparent;
+    margin-bottom: -6px;
+    box-sizing: border-box;
 }
 .sing_in > a {
     display: flex;
@@ -384,6 +382,9 @@ body > input[type="radio"] {
     padding: 6px 10px 6px 10px;
     border-radius: 50px;
     align-items: center;
+}
+.sing_in:hover .sing-form {
+    display: block;
 }
 .sing-form {
     position: absolute;
@@ -398,29 +399,54 @@ body > input[type="radio"] {
 .sing-form a {
     color: #000;
 }
-.sing-form input {
+.sing-form .field input {
     width: 210px;
     height: 42px;
     border-radius: 4px;
     border: 1px solid #9cb0a4;
-    margin-bottom: 20px;
     padding: 0 15px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.sing-form .field label {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #000;
+    pointer-events: none;
+    transition: .3s;
+}
+.sing-form .field label:hover {
+
 }
 .sing-form input:hover,
 .sing-form input:focus {
     border: 2px solid #9cb0a4;
-    margin: -1px -1px 19px -1px;
+    margin: 9px -1px -1px -1px;
     outline: none;
 }
-.sing-form input::-webkit-input-placeholder {
-    color:#aaaaaa;
-    opacity: 1; 
-    transition: opacity 0.3s ease;
+.sing-form .field input:focus ~ label,
+.sing-form .field input:valid ~ label {
+    top: -10px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
 }
-.sing-form input:focus::-webkit-input-placeholder {
-    opacity: 0; 
-    transition: opacity 0.3s ease;
+
+.field {
+    margin-bottom: 20px;
+    position: relative;
 }
+
+
+
+
+
 .button-sing {
     width: 100px;
     padding: 10px 0;
@@ -445,7 +471,7 @@ body > input[type="radio"] {
     flex-direction: column;
     width: 150px;
     position: absolute;
-    top: 150px;
+    top: 172px;
     right: -5px;
     font-size: 13px;
     line-height: 15px;
@@ -468,13 +494,12 @@ body > input[type="radio"] {
 
 
 
-
 .trash {
     width: 117px;
     border-radius: 50px;
     position: relative;
-    border-bottom: 5px solid transparent;
-    margin-bottom: -5px;
+    border-bottom: 6px solid transparent;
+    margin-bottom: -6px;
     color: #000;
 }
 .trash > a {
@@ -1640,7 +1665,7 @@ select:hover + .icon-down path{
     position: absolute;
     background-color: transparent;
     bottom: 360px;
-    left: 400px;
+    left: 430px;
     width: 21px;
     height: 21px;
     font-size: 0;

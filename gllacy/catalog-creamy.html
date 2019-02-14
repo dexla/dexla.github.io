@@ -59,10 +59,14 @@
                         <li class="sing_in">
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Sing-in</a>
                             <form action="#" class="sing-form" method="GET" id="">
-                                <label for="sing-mail" class="visually-hidden">E-mail</label>
-                                <input type="email" placeholder="E-mail" id="sing-mail">
-                                <label for="sing-pass" class="visually-hidden">Password</label>
-                                <input type="password" placeholder="Password" id="sing-pass">
+                                <div class="field">
+                                    <input type="email" id="sing-mail" required="">
+                                    <label for="sing-mail">E-mail</label>
+                                </div>
+                                <div class="field">
+                                    <input type="password" required="" id="sing-pass">
+                                    <label for="sing-pass">Password</label>
+                                </div>
                                 <button class="button button-sing" type="submit">Sing-in</button>
                                 <p class="sing-pass">
                                     <a href="#">Forgetten password?</a>
