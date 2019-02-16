@@ -80,6 +80,7 @@ body > input[type="radio"] {
     left: 230px;
     overflow: hidden;
     color: white;
+    
 }
 .page-wrapper .slider-item {
     display: none;
@@ -421,9 +422,6 @@ body > input[type="radio"] {
     pointer-events: none;
     transition: .3s;
 }
-.sing-form .field label:hover {
-
-}
 .sing-form input:hover,
 .sing-form input:focus {
     border: 2px solid #9cb0a4;
@@ -437,16 +435,15 @@ body > input[type="radio"] {
     color: #03a9f4;
     font-size: 12px;
 }
-
 .field {
     margin-bottom: 20px;
     position: relative;
 }
+/* ----------------- */
 
 
 
-
-
+/* ====================================== */
 .button-sing {
     width: 100px;
     padding: 10px 0;
@@ -1028,6 +1025,11 @@ body > input[type="radio"] {
 .feature-item:last-child {
     background: url(../img/thermometer.svg) 0 0px no-repeat;
 }
+/* ======================================= */
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+}
 /* --------------------------------------- */
 .news {
     width: 520px;
@@ -1057,12 +1059,6 @@ body > input[type="radio"] {
     color: #e73827;
 }
 /* ----------------------------- */
-.subscribe {
-    width: 550px;
-    height: 210px;
-    padding: 5px;
-    background: url(../img/postPhone.png) 0 0 no-repeat;
-}
 .subby {
     background: #f8f7f4;
     border-radius: 15px;
@@ -1073,16 +1069,49 @@ body > input[type="radio"] {
 }
 .subby form {
     margin-bottom: 12px;
+    display: flex;
+    align-self: center;
+}
+.form-subs {
+    position: relative;
 }
 .subby input {
-    width: 338px;
+    width: 335px;
     padding: 10px 15px 12px 15px;
     border-radius: 5px;
     border: 1px solid #d3d3d2;
     font-size: 16px;
     line-height: 24px;
     margin-right: 8px;
+    -webkit-appearance: none;
+    color: #000;
+    background-color: transparent;
 }
+.subscribe .subby label {
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    padding: 0 15px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s;
+    color: rgb(177, 177, 177);
+}
+.subscribe .subby input:focus ~ label,
+.subscribe .subby input:valid ~ label {
+    top: -22px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.subscribe {
+    width: 550px;
+    height: 210px;
+    padding: 5px;
+    background: url(../img/postPhone.png) 0 0 no-repeat;
+}
+
+
 .subby button {
     width: 128px;
     border: none;
@@ -1097,10 +1126,7 @@ body > input[type="radio"] {
     position: relative;
     top: 2px;
 }
-.index-columns {
-    display: flex;
-    justify-content: space-between;
-}
+/* ------------------------------------------- */
 .map {
     width: 100%;
     margin: 40px auto;
@@ -1123,6 +1149,7 @@ body > input[type="radio"] {
 .map iframe {
 	border: 0;
     width: 100%;
+    z-index: 100;
 }
 .contact-info {
     display: flex;
@@ -1312,6 +1339,8 @@ select:hover + .icon-down path{
 .max-toggle {
     left: 150px;
 }
+
+
 .filtres input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
